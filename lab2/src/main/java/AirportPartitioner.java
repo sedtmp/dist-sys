@@ -3,4 +3,5 @@ import org.apache.hadoop.io.Text;
 
 public class AirportPartitioner extends Partitioner<AirportWritableComparable, Text> {
     @Override
+    public int 
 }
