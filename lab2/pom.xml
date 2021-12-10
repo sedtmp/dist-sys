@@ -19,8 +19,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven</groupId>
-                <artifactId>maven</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId></artifactId>
                 <version></version>
             </plugin>
         </plugins>
