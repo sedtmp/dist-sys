@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComparable, Text> {
     private static final int AIRPORT_ID = 14;
-    private static final int DELAY = 18;
+    private static final int DELAY_INDEX = 18;
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException {
@@ -14,7 +14,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
         String airportIdStr = line[AIRPORT_ID];
         if (!airportIdStr.equals("\"DEST_AIRPORT_ID\"")) {
             int airportId = Integer.parseInt(airportIdStr);
-            String delay = line[DELAY];
+            String delay = line[DELAY_INDEX];
             if (!delay.isEmpty()) {
                 context.write(new AirportWritableComparable(airportId, 1), new Text(delay));
             }
