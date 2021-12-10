@@ -1,5 +1,5 @@
-import org.apache.hadoop.
+import org.apache.hadoop.io.WritableComparable;
 
-public class AirportWritableComparable {
+public class AirportWritableComparable implements WritableComparable{
 
 }
