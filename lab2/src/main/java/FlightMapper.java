@@ -9,7 +9,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
     private static final int ARR_DELAY_NEW = 18;
 
     @Override
-    protected void map(LongWritable key, Text value, Context context) throws IOException {
+    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] line = value.toString().split(",");
         String airportIdStr = line[DEST_AIRPORT_ID];
         if (!airportIdStr.equals("\"DEST_AIRPORT_ID\"")) {
