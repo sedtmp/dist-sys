@@ -34,4 +34,7 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
         airportId = dataInput.readInt();
         code = dataInput.readInt();
     }
+
+    @Override
+    
 }
