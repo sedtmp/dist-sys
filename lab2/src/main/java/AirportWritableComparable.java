@@ -31,6 +31,6 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
-        airportId = 
+        airportId = dataInput
     }
 }
