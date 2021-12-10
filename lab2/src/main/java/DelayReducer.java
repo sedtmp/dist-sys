@@ -24,7 +24,7 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
                 sum += delay;
                 count += 1;
             }
-            float 
+            float average = 
         }
     }
 }
