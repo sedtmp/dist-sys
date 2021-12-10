@@ -1,6 +1,5 @@
 import org.apache.hadoop.io.WritableComparable;
 
-import javax.xml.crypto.Data;
 import java.io.DataOutput;
 import java.io.IOException;
 
