@@ -11,5 +11,5 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
         this.code = code;
     }
 
-    
+    public int 
 }
