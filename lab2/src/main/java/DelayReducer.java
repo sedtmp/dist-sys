@@ -1,3 +1,3 @@
-public class DelayReducer extends ProcessBuilder.Redirect {
+public class DelayReducer extends  {
 
 }
