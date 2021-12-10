@@ -10,6 +10,6 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
                        Text value,
                        Mapper<LongWritable, Text, AirportWritableComparable, Text>.Context context)
             throws IOException, InterruptedException {
-        String[] line = 
+        String[] line = value.toString()
     }
 }
