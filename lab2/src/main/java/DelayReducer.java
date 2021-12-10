@@ -23,8 +23,8 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
                 max = Math.max(max, delay);
                 sum += delay;
                 count += 1;
-                
             }
+            
         }
     }
 }
