@@ -6,7 +6,9 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
     @Override
     protected void map(LongWritable key,
                        Text value,
-                       Mapper<LongWritable, Text, AirportWritableComparable, Text>.Context context) {
+                       Mapper<LongWritable, Text, AirportWritableComparable, Text>.Context context)
+            throws 
+    {
 
     }
 }
