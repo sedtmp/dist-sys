@@ -14,7 +14,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
         if (key.get() > 0) {
             String code = line[0].replaceAll("\"", "");
             String description = line[1].replaceAll("\"", "");
-            context.write
+            context.write(new )
         }
     }
 }
