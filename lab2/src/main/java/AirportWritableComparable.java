@@ -24,7 +24,7 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     }
 
     public int compareByAirportId(AirportWritableComparable awc) {
-        
+        if (airportId > )
     }
 
     @Override
