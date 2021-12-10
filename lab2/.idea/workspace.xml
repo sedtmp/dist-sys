@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="227f4b42-2be2-43d9-bd49-9600bd4f8a89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportWritableComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportWritableComparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
