@@ -12,6 +12,6 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
     protected void map(LongWritable key, Text value, Context context) throws IOException {
         String[] line = value.toString().split(",");
         String airportIdStr = line[DELAY];
-        if (!airportIdStr)
+        if (!airportIdStr.equals())
     }
 }
