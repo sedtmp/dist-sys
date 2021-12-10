@@ -8,5 +8,5 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
     protected void reduce(AirportWritableComparable key,
                           Iterable<Text> values,
                           Context context)
-            throws IOException
+            throws IOException, InterruptedException,
 }
