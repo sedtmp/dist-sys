@@ -20,7 +20,7 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven</artifactId>
+                <artifactId>maven-compiler-plugin</artifactId>
                 <version></version>
             </plugin>
         </plugins>
