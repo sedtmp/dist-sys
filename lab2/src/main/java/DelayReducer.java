@@ -18,7 +18,7 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
             float sum = 0f;
             int count = 0;
             while (iter.hasNext()) {
-                float delay = Float.parseFloat()
+                float delay = Float.parseFloat(iter.hasNext())
             }
         }
     }
