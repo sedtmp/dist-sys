@@ -11,10 +11,11 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException {
         String[] line = value.toString().split(",");
-        String airportIdStr = line[DELAY];
+        String airportIdStr = line[AIRPORT_ID];
         if (!airportIdStr.equals("\"DEST_AIRPORT_ID\"")) {
             int airportId = Integer.parseInt(airportIdStr);
-            String delay = line = 
+            String delay = line[DELAY];
+            
         }
     }
 }
