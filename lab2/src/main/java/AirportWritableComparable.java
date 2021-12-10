@@ -20,5 +20,5 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     }
 
     @Override
-    public 
+    public void 
 }
