@@ -1,6 +1,6 @@
 import org.apache.hadoop.mapreduce.Partitioner;
 
-import javax.xml.soap.Text;
+import org.apache.hadoop.Text;
 
 public class AirportPartitioner extends Partitioner<AirportWritableComparable, Text> {
 }
