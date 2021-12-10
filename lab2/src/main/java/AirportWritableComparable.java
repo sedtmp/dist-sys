@@ -44,7 +44,8 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
             return -1;
         }
         if (code > airport.code) {
-            
+            return 1;
         }
+        if ()
     }
 }
