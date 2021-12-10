@@ -4,5 +4,6 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     private int airportId;
     private int code;
 
+    AirportWritableComparable() {}
     
 }
