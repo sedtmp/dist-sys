@@ -37,6 +37,6 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
 
     @Override
     public int compareTo(AirportWritableComparable airport) {
-        
+        if 
     }
 }
