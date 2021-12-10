@@ -12,7 +12,7 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
             throws IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         String airportName = iter.next().toString();
-        
+        if ()
 
     }
 }
