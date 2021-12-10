@@ -1,5 +1,8 @@
 import org.apache.hadoop.io.WritableComparable;
 
+import javax.xml.crypto.Data;
+import java.io.DataOutput;
+
 public class AirportWritableComparable implements WritableComparable<AirportWritableComparable> {
     private int airportId;
     private int code;
@@ -20,5 +23,5 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     }
 
     @Override
-    public void write()
+    public void write(DataOutput)
 }
