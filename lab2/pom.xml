@@ -11,7 +11,7 @@
     <dependencies>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
-            <artifactId>apache</artifactId>
+            <artifactId>hadoop-client</artifactId>
             <version></version>
         </dependency>
     </dependencies>
