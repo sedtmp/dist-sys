@@ -1,5 +1,5 @@
 
 
-public class AirportWritableComparable implements  {
+public class AirportWritableComparable {
 
 }
