@@ -11,5 +11,13 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
         this.code = code;
     }
 
-    public int 
+    public int getAirportId() {
+        return airportId;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    
 }
