@@ -10,6 +10,7 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
                           Iterator<Text> values,
                           Context context)
             throws IOException, InterruptedException {
-        Iterator<Text> iter = values.next().to
+        Iterator<Text> iter = values.next().toString();
+        
     }
 }
