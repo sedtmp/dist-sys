@@ -19,7 +19,9 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
             int count = 0;
             while (iter.hasNext()) {
                 float delay = Float.parseFloat(iter.next().toString());
-                min = min < 
+                min = Math.min(min, delay);
+                max = Math.max(max, delay);
+                
             }
         }
     }
