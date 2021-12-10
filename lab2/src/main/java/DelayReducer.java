@@ -7,9 +7,9 @@ import java.util.Iterator;
 public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text, Text> {
     @Override
     protected void reduce(AirportWritableComparable key,
-                          Iterable<Text> values,
+                          Iterator<Text> values,
                           Context context)
             throws IOException, InterruptedException {
-        Iterator<Text> iter = values.next()
+        Iterator<Text> iter = values.next().to
     }
 }
