@@ -11,7 +11,8 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
                           Context context)
             throws IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
-        String airportName = iter.next().
+        String airportName = iter.next().toString();
+        
 
     }
 }
