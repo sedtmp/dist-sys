@@ -10,7 +10,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache</groupId>
+            <groupId>org.apache.hadoop</groupId>
             <artifactId>apache</artifactId>
             <version></version>
         </dependency>
