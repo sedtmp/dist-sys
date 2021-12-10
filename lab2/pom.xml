@@ -10,8 +10,9 @@
 
     <dependencies>
         <dependency>
-            <groupId></groupId>
-            <artifactId></artifactId>
+            <groupId>org.apache</groupId>
+            <artifactId>apache</artifactId>
+            <version></version>
         </dependency>
     </dependencies>
 
