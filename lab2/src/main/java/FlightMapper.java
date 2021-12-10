@@ -14,7 +14,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
         String airportIdStr = line[DELAY];
         if (!airportIdStr.equals("\"DEST_AIRPORT_ID\"")) {
             int airportId = Integer.parseInt(airportIdStr);
-            
+            String delay = 
         }
     }
 }
