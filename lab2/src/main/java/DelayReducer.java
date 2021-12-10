@@ -13,7 +13,8 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
         Iterator<Text> iter = values.iterator();
         String airportName = iter.next().toString();
         if (iter.hasNext()) {
-            float min = Float.MAX_VALUE
+            float min = Float.MAX_VALUE;
+            
         }
     }
 }
