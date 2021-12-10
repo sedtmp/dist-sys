@@ -12,7 +12,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
             throws IOException, InterruptedException {
         String[] line = value.toString().split(",[\"]");
         if (key.get() > 0) {
-            String code = 
+            String code = line[0]
         }
     }
 }
