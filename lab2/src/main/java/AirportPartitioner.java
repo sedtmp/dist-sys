@@ -1,4 +1,4 @@
 import org.apache.hadoop.mapreduce.Partitioner;
 
-public class AirportPartitioner extends Partitioner<Air> {
+public class AirportPartitioner extends Partitioner<AirportWritableComparable,> {
 }
