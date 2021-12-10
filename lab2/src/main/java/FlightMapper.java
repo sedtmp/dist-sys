@@ -7,5 +7,5 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
     private static final int DELAY = 18;
 
     @Override
-    protected void map(LongWritable)
+    protected void map(LongWritable key, )
 }
