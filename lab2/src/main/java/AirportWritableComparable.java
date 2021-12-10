@@ -1,5 +1,6 @@
 import org.apache.hadoop.io.WritableComparable;
 
+import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
@@ -29,5 +30,5 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     }
 
     @Override
-    public void readFields()
+    public void readFields(DataInput)
 }
