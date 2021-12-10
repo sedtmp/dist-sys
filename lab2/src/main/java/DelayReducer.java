@@ -1,3 +1,3 @@
-public class DelayReducer {
-    
+public class DelayReducer extends  {
+
 }
