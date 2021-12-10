@@ -6,5 +6,5 @@ public class AirportGroupingComparator extends WritableComparator {
     }
 
     @Override
-    public int compare()
+    public int compare(WritableComparator)
 }
