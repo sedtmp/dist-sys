@@ -7,11 +7,11 @@ import java.util.Iterator;
 public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text, Text> {
     @Override
     protected void reduce(AirportWritableComparable key,
-                          Iterator<Text> values,
+                          Iterable<Text> values,
                           Context context)
             throws IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
-
+        
 
     }
 }
