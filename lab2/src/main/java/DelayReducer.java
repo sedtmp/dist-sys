@@ -16,6 +16,7 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
             float min = Float.MAX_VALUE;
             float max = 0f;
             float sum = 0f;
+            int count = 0;
             
         }
     }
