@@ -2,6 +2,7 @@ import org.apache.hadoop.io.WritableComparable;
 
 import javax.xml.crypto.Data;
 import java.io.DataOutput;
+import java.io.IOException;
 
 public class AirportWritableComparable implements WritableComparable<AirportWritableComparable> {
     private int airportId;
@@ -23,5 +24,7 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     }
 
     @Override
-    public void write(DataOutput dataOutput) throws 
+    public void write(DataOutput dataOutput) throws IOException {
+        
+    }
 }
