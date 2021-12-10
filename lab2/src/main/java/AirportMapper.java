@@ -12,7 +12,8 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
             throws IOException, InterruptedException {
         String[] line = value.toString().split(",[\"]");
         if (key.get() > 0) {
-            String code = line[0].replaceAll("\"")
+            String code = line[0].replaceAll("\"", "");
+            
         }
     }
 }
