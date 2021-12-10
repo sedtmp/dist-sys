@@ -23,7 +23,7 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
         return code;
     }
 
-    public int compareByAirportId(AirportWritableComparable airport) {
+    public int compareByAirportId(AirportWritableComparable awc) {
         
     }
 
@@ -40,13 +40,13 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
     }
 
     @Override
-    public int compareTo(AirportWritableComparable airport) {
-        if (airportId > airport.airportId) {
+    public int compareTo(AirportWritableComparable awc) {
+        if (airportId > awc.airportId) {
             return 1;
         }
-        if (airportId < airport.airportId) {
+        if (airportId < awc.airportId) {
             return -1;
         }
-        return Integer.compare(code, airport.code);
+        return Integer.compare(code, awc.code);
     }
 }
