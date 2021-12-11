@@ -6,5 +6,7 @@ public class AirportSerializable implements Serializable {
     private float delay;
     private boolean cancelled;
 
-    public 
+    public AirportSerializable() {}
+
+    
 }
