@@ -45,5 +45,6 @@ public class AirportSerializable implements Serializable {
 
     public void setCancelled(boolean cancelled) {
         this.cancelled = cancelled;
+        
     }
 }
