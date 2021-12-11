@@ -8,5 +8,7 @@ public class AirportSerializable implements Serializable {
 
     public AirportSerializable() {}
 
-    public AirportSerializable(int originAirportId, int destAirportId, float delay, boolean)
+    public AirportSerializable(int originAirportId, int destAirportId, float delay, boolean cancelled) {
+        
+    }
 }
