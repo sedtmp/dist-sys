@@ -31,5 +31,7 @@ public class AirportSerializable implements Serializable {
         return cancelled;
     }
 
-    public void setOriginAirportId(int )
+    public void setOriginAirportId(int originAirportId) {
+        this.originAirportId = originAirportId;
+    }
 }
