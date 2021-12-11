@@ -70,6 +70,6 @@ public class App {
                     return outputStr;
                 }
         );
-        result.saveAsTextFile("/user/sed/");
+        result.saveAsTextFile("/user/sed/lab3_result");
     }
 }
