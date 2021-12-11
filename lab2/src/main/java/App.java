@@ -17,6 +17,7 @@ public class App {
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportMapper.class);
         job.setPartitionerClass(AirportPartitioner.class);
         job.setGroupingComparatorClass(AirportGroupingComparator.class);
-        job.setReducerClass();
+        job.setReducerClass(DelayReducer.class);
+        
     }
 }
