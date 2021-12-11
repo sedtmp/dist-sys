@@ -1,5 +1,7 @@
 DelayReducer.class
 AirportPartitioner.class
 AirportWritableComparable.class
-AirportGroupingComparator.class
 FlightMapper.class
+AirportMapper.class
+App.class
+AirportGroupingComparator.class
