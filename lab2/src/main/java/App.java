@@ -9,6 +9,7 @@ public class App {
 
         Job job = Job.getInstance();
         job.setJarByClass(App.class);
-        job.setJobName("Reduce side");
+        job.setJobName("Reduce side join");
+        
     }
 }
