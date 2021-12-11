@@ -8,5 +8,5 @@ public class AirportSerializable implements Serializable {
 
     public AirportSerializable() {}
 
-    public 
+    public AirportSerializable
 }
