@@ -8,8 +8,8 @@ import scala.Tuple2;
 import java.util.Map;
 
 public class App {
-    private final static String AIRPORTS_PATH = "resources/L_AIRPORT_ID.csv";
-    private final static String FLIGHTS_PATH = "resources/664600583_T_ONTIME_sample.csv";
+    private final static String AIRPORTS_PATH = "L_AIRPORT_ID.csv";
+    private final static String FLIGHTS_PATH = "664600583_T_ONTIME_sample.csv";
 
     public final static int ORIGIN_AIRPORT_ID = 11;
     public final static int DEST_AIRPORT_ID = 14;
