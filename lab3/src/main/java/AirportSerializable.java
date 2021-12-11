@@ -31,5 +31,5 @@ public class AirportSerializable implements Serializable {
         return cancelled;
     }
 
-    public void 
+    public void setOriginAirportId(int )
 }
