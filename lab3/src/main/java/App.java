@@ -70,6 +70,6 @@ public class App {
                     return outputStr;
                 }
         );
-        result.saveAsTextFile("/user/");
+        result.saveAsTextFile("/user/sed/");
     }
 }
