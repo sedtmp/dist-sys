@@ -15,5 +15,13 @@ public class FlightsSerializable implements Serializable {
         this.flightsNumber = flightsNumber;
     }
 
-    public 
+    public float getDelayMaxTime() {
+        return delayMaxTime;
+    }
+
+    public float getFlightsDelay() {
+        return flightsDelay;
+    }
+
+    public get
 }
