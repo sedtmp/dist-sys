@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adda94b0-626b-4c8d-b513-96b337ec1a38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportSerializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportSerializable.java" afterDir="false" />
-    </list>
+    <list default="true" id="adda94b0-626b-4c8d-b513-96b337ec1a38" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
