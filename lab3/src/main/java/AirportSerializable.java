@@ -39,5 +39,9 @@ public class AirportSerializable implements Serializable {
         this.destAirportId = destAirportId;
     }
 
-    
+    public void setDelay(float delay) {
+        this.delay = delay;
+    }
+
+    public void set
 }
