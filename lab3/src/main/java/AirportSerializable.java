@@ -15,5 +15,5 @@ public class AirportSerializable implements Serializable {
         this.cancelled = cancelled;
     }
 
-    public int get
+    public int getOriginAirportId()
 }
