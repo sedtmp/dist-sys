@@ -43,5 +43,7 @@ public class AirportSerializable implements Serializable {
         this.delay = delay;
     }
 
-    public void set
+    public void setCancelled(boolean cancelled) {
+        this.cancelled = cancelled;
+    }
 }
