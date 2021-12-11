@@ -3,14 +3,15 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
 public class App {
-    private final static String airportsPath = "resources/L_AIRPORT_ID.csv";
-    private final static String fligthsPath = "resources/664600583_T_ONTIME_sample.csv";
+    private final static String AIRPORTS_PATH = "resources/L_AIRPORT_ID.csv";
+    private final static String FLIGHTS_PATH = "resources/664600583_T_ONTIME_sample.csv";
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> airports = sc.textFile(airportsPath);
-        JavaRDD<String> flights = sc.textFile(fligthsPath);
+        JavaRDD<String> airports = sc.textFile(AIRPORTS_PATH);
+        JavaRDD<String> flights = sc.textFile(FLIGHTS_PATH);
         
+
     }
 }
