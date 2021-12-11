@@ -1,12 +1,12 @@
 import java.io.Serializable;
 
-public class AirportSerializable implements Serializable {
+public class FlightData implements Serializable {
     private float delay;
-    private boolean cancelled;
+    private float cancelled;
 
-    public AirportSerializable() {}
+    public FlightData() {}
 
-    public AirportSerializable(float delay, boolean cancelled) {
+    public FlightData(float delay, float cancelled) {
         this.delay = delay;
         this.cancelled = cancelled;
     }
@@ -15,7 +15,7 @@ public class AirportSerializable implements Serializable {
         return delay;
     }
 
-    public boolean isCancelled() {
+    public float getCancelled() {
         return cancelled;
     }
 
@@ -23,7 +23,7 @@ public class AirportSerializable implements Serializable {
         this.delay = delay;
     }
 
-    public void setCancelled(boolean cancelled) {
+    public void setCancelled(float cancelled) {
         this.cancelled = cancelled;
     }
 }
