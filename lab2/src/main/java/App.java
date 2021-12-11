@@ -12,6 +12,6 @@ public class App {
         Job job = Job.getInstance();
         job.setJarByClass(App.class);
         job.setJobName("Reduce side join");
-        MultipleInputs.addInputPath(job, new Path());
+        MultipleInputs.addInputPath(job, new Path(args[0]), );
     }
 }
