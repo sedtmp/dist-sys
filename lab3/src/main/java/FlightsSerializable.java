@@ -46,4 +46,5 @@ public class FlightsSerializable implements Serializable {
     public void setFlightsNumber(int flightsNumber) {
         this.flightsNumber = flightsNumber;
     }
+    
 }
