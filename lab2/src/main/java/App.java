@@ -26,6 +26,7 @@ public class App {
         job.setOutputValueClass(Text.class);
 
         job.setNumReduceTasks(2);
-        
+
+        System
     }
 }
