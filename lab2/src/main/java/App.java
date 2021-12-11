@@ -21,5 +21,6 @@ public class App {
         job.setReducerClass(DelayReducer.class);
         job.setMapOutputKeyClass(AirportWritableComparable.class);
         job.setOutputKeyClass(Text.class);
+        job.setOutputKeyClass(Text.class);
     }
 }
