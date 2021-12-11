@@ -5,4 +5,6 @@ public class AirportSerializable implements Serializable {
     private int destAirportId;
     private float delay;
     private boolean cancelled;
+
+    public 
 }
