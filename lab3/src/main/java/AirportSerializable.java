@@ -35,5 +35,9 @@ public class AirportSerializable implements Serializable {
         this.originAirportId = originAirportId;
     }
 
-    public void 
+    public void setDestAirportId(int destAirportId) {
+        this.destAirportId = destAirportId;
+    }
+
+    
 }
