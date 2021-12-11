@@ -13,7 +13,7 @@ public class App {
             System.exit(-1);
         }
 
-        JobConf job = Job.getInstance();
+        JobConf job = new JobConf();
         job.setJarByClass(App.class);
         job.setJobName("Make join");
 
