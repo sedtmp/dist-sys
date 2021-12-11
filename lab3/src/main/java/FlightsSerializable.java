@@ -9,6 +9,11 @@ public class FlightsSerializable implements Serializable {
     public FlightsSerializable() {}
 
     public FlightsSerializable(float delayMaxTime, float flightsDelay, float cancelledFlights, int flightsNumber) {
-        
+        this.delayMaxTime = delayMaxTime;
+        this.flightsDelay = flightsDelay;
+        this.cancelledFlights = cancelledFlights;
+        this.flightsNumber = flightsNumber;
     }
+
+    
 }
