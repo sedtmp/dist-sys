@@ -18,6 +18,6 @@ public class App {
         job.setPartitionerClass(AirportPartitioner.class);
         job.setGroupingComparatorClass(AirportGroupingComparator.class);
         job.setReducerClass(DelayReducer.class);
-        
+        job.setOutputFormatClass();
     }
 }
