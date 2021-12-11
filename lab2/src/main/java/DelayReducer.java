@@ -27,7 +27,7 @@ public class DelayReducer extends Reducer<AirportWritableComparable, Text, Text,
             float average = sum / count;
             context.write(
                     new Text("\nAirport: " + airportName),
-                    new Text("\nMin delay: " + min + "\nMax delay: " + max + )
+                    new Text("\nMin delay: " + min + "\nMax delay: " + max + "\nAverage: " + average),
                     );
         }
     }
