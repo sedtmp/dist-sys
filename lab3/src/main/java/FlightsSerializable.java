@@ -23,5 +23,27 @@ public class FlightsSerializable implements Serializable {
         return flightsDelay;
     }
 
-    public get
+    public float getCancelledFlights() {
+        return cancelledFlights;
+    }
+
+    public int getFlightsNumber() {
+        return flightsNumber;
+    }
+
+    public void setDelayMaxTime(float delayMaxTime) {
+        this.delayMaxTime = delayMaxTime;
+    }
+
+    public void setFlightsDelay(float flightsDelay) {
+        this.flightsDelay = flightsDelay;
+    }
+
+    public void setCancelledFlights(float cancelledFlights) {
+        this.cancelledFlights = cancelledFlights;
+    }
+
+    public void setFlightsNumber(int flightsNumber) {
+        this.flightsNumber = flightsNumber;
+    }
 }
