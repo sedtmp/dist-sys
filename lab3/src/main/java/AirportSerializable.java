@@ -1,5 +1,6 @@
 import java.io.Serializable;
 
 public class AirportSerializable implements Serializable {
-    private int
+    private int originAirportId;
+    
 }
