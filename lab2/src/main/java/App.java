@@ -7,6 +7,6 @@ public class App {
             System.exit(-1);
         }
 
-        Job = 
+        Job job = 
     }
 }
