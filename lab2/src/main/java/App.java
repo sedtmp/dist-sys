@@ -1,3 +1,3 @@
 public class App {
-    public static void 
+    public static void main()
 }
