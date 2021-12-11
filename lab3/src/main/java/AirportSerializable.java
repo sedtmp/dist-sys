@@ -27,5 +27,9 @@ public class AirportSerializable implements Serializable {
         return delay;
     }
 
-    public 
+    public boolean isCancelled() {
+        return cancelled;
+    }
+
+    public void 
 }
