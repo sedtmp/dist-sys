@@ -7,6 +7,7 @@ public class App {
             System.exit(-1);
         }
 
-        Job job = 
+        Job job = Job.getInstance();
+        
     }
 }
