@@ -54,4 +54,6 @@ public class FlightsSerializable implements Serializable {
         flightsCount += data.getFlightsCount();
         cancelledFlights += data.getCancelledFlights();
     }
+
+    public void calc
 }
