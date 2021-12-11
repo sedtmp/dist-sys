@@ -65,7 +65,7 @@ public class App {
                 T -> {
                     Map<Integer, String> airportsData = airportsBroadcasted.value();
                     String outputStr = airportsData.get(T._1._1) + " -> " + airportsData.get(T._1._2) + " :\n";
-                    outputStr += "maxDelay: " + 
+                    outputStr += "maxDelay: " + T._2.
                 }
         );
     }
