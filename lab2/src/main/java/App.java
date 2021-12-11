@@ -27,6 +27,6 @@ public class App {
 
         job.setNumReduceTasks(2);
 
-        System
+        System.exit
     }
 }
