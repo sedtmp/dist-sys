@@ -13,6 +13,6 @@ public class App {
         Job job = Job.getInstance();
         job.setJarByClass(App.class);
         job.setJobName("Reduce side join");
-        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FlightMapper);
+        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FlightMapper.class);
     }
 }
