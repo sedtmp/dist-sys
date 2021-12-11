@@ -56,6 +56,6 @@ public class FlightsSerializable implements Serializable {
     }
 
     public float calcCancelledPercent() {
-        return cancelledFlights / 
+        return cancelledFlights / (float)flightsCount;
     }
 }
