@@ -19,6 +19,6 @@ public class App {
         job.setGroupingComparatorClass(AirportGroupingComparator.class);
         job.setReducerClass(DelayReducer.class);
         job.setMapOutputKeyClass(AirportWritableComparable.class);
-        job.s
+        job.setOut
     }
 }
