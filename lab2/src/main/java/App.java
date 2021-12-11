@@ -1,3 +1,4 @@
+import org.apache.hadoop.mapred.lib.MultipleInputs;
 import org.apache.hadoop.mapreduce.Job;
 
 public class App {
@@ -10,6 +11,6 @@ public class App {
         Job job = Job.getInstance();
         job.setJarByClass(App.class);
         job.setJobName("Reduce side join");
-        Multiple
+        MultipleInputs
     }
 }
