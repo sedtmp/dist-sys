@@ -15,5 +15,5 @@ public class FlightsSerializable implements Serializable {
         this.flightsNumber = flightsNumber;
     }
 
-    
+    public 
 }
