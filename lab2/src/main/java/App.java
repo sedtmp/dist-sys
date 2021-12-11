@@ -9,6 +9,6 @@ public class App {
 
         Job job = Job.getInstance();
         job.setJarByClass(App.class);
-        job.
+        job.setJobName();
     }
 }
