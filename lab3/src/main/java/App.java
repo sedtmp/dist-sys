@@ -39,6 +39,6 @@ public class App {
                   parseFlightData(s)
           )
         );
-        JavaPairRDD<Tuple2<Integer, Integer>, FlightsSerializable>
+        JavaPairRDD<Tuple2<Integer, Integer>, FlightsSerializable> reducesFlightsRDD = 
     }
 }
