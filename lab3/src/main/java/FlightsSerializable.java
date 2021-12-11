@@ -8,5 +8,5 @@ public class FlightsSerializable implements Serializable {
 
     public FlightsSerializable() {}
 
-    public FlightsSerializable()
+    public FlightsSerializable(float delayMaxTime, float)
 }
