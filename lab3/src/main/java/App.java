@@ -67,7 +67,7 @@ public class App {
                     String outputStr = airportsData.get(T._1._1) + " -> " + airportsData.get(T._1._2) + " :\n";
                     outputStr += "maxDelay: " + T._2.getDelayMaxTime() + "\n";
                     outputStr += "percentCancelled: " + T._2.calcCancelledPercent() + "\n";
-                    
+                    return outputStr;
                 }
         );
     }
