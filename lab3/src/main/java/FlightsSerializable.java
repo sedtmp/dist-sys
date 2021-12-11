@@ -3,5 +3,6 @@ import java.io.Serializable;
 public class FlightsSerializable implements Serializable {
     private float delayMaxTime;
     private float flightsDelay;
-    private float cancelled
+    private float cancelledFlights;
+    private 
 }
