@@ -6,5 +6,5 @@ public class FlightsSerializable implements Serializable {
     private float cancelledFlights;
     private int flightsNumber;
 
-    
+
 }
