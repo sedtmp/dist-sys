@@ -10,6 +10,7 @@ public class App {
 
     public final static int ORIGIN_AIRPORT_ID = 11;
     public final static int DEST_AIRPORT_ID = 14;
+    public final static int FLIGHT_DELAY = 14;
 
     private static
 
