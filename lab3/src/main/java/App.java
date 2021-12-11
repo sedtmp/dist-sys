@@ -2,7 +2,10 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
+
+import java.util.Map;
 
 public class App {
     private final static String AIRPORTS_PATH = "resources/L_AIRPORT_ID.csv";
@@ -42,7 +45,27 @@ public class App {
         JavaPairRDD<Tuple2<Integer, Integer>, FlightsSerializable> reducesFlightsRDD = pairFlightsRDD.aggregateByKey(
                 new FlightsSerializable(),
                 (a, b) -> {
-
+                    a.merge(b);
+                    return a;
+                },
+                (a, b) -> {
+                    a.mergeAll(b);
+                    return a;
+                }
+        );
+        JavaPairRDD<Integer, String> pairAirportsRDD = airports.mapToPair(
+                s -> new Tuple2<>(
+                        Integer.parseInt(s.split(",", 2)[0].replaceAll("\"", "")),
+                        s.split(",", 2)[1].replaceAll("\"", "")
+                )
+        );
+        Map<Integer, String> airportsMap = pairAirportsRDD.collectAsMap();
+        final Broadcast<Map<Integer, String>> airportsBroadcasted = sc.broadcast(airportsMap);
+        JavaRDD<String> result = reducesFlightsRDD.map(
+                T -> {
+                    Map<Integer, String> airportsData = airportsBroadcasted.value();
+                    String outputStr = airportsData.get(T._1._1) + " -> " + airportsData.get(T._1._2) + " :\n";
+                    outputStr += "maxDelay: " + 
                 }
         );
     }
