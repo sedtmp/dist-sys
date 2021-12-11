@@ -70,6 +70,6 @@ public class App {
                     return outputStr;
                 }
         );
-        result.save
+        result.saveAsTextFile();
     }
 }
