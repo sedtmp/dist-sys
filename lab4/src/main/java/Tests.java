@@ -5,5 +5,5 @@ public class Tests {
     private final String TEST = "test";
 
     @JsonProperty(PACKAGE_ID)
-    
+    private final 
 }
