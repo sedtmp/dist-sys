@@ -6,8 +6,8 @@ public class Test implements Serializable {
     @JsonProperty("testName")
     private final String testName;
 
-    @JsonProperty("ex")
-    private final String testName;
+    @JsonProperty("expectedResult")
+    private final String expectedResult;
 
     @JsonProperty("testName")
     private final String testName;
