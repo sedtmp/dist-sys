@@ -1,15 +1,44 @@
 import actors.ExecuteActor;
 import actors.RouteActor;
 import actors.StoreActor;
+import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.Http;
+import akka.http.javadsl.marshallers.jackson.Jackson;
+import akka.http.javadsl.model.HttpRequest;
+import akka.http.javadsl.model.HttpResponse;
+import akka.http.javadsl.server.Route;
+import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
 import akka.stream.ActorMaterializer;
+import akka.stream.javadsl.Flow;
 import constants.Constants;
+import messages.GetMessage;
+import messages.PackageMessage;
+import scala.concurrent.Future;
+
+import static akka.http.javadsl.server.Directives.*;
 
 public class App {
+    private Route createRoute(ActorRef storeActor, ActorRef routeActor) {
+        return route(
+                get(() -> parameter(Constants.PACKAGE_ID, packageId -> {
+                    Future<Object> result = Patterns.ask(
+                           storeActor,
+                           new GetMessage(Integer.parseInt(packageId)),
+                           Constants.TIME_OUT_MILLIS
+                   );
+                   return completeOKWithFuture(result, Jackson.marshaller());
+                })),
+                post(() -> entity(Jackson.unmarshaller(PackageMessage.class), m -> {
+                    routeActor.tell(m, ActorRef.noSender());
+                    return complete("Test started");
+                }))
+        );
+    }
+
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("lab4");
         final Http http = Http.get(system);
@@ -21,6 +50,7 @@ public class App {
                 Constants.EXECUTE_ACTOR
         );
         ActorRef routeActor = system.actorOf(Props.create(RouteActor.class), Constants.ROUTE_ACTOR);
-        
+
+        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = 
     }
 }
