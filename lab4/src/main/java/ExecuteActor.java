@@ -5,6 +5,6 @@ public class ExecuteActor extends AbstractActor {
     ActorRef storeActor;
 
     public ExecuteActor(ActorRef storeActor) {
-        thos.store
+        this.storeActor = storeActor;
     }
 }
