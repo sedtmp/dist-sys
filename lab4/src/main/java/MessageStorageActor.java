@@ -26,6 +26,10 @@ public class MessageStorageActor extends AbstractActor {
         }
     }
 
+    public static class GetMessage {
+        private
+    }
+
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create().match(
