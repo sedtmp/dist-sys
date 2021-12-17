@@ -51,6 +51,8 @@ public class App {
         );
         ActorRef routeActor = system.actorOf(Props.create(RouteActor.class), Constants.ROUTE_ACTOR);
 
-        final Flow<HttpRequest, HttpResponse, ?> routeFlow = 
+        App app = new App();
+
+        final Flow<HttpRequest, HttpResponse, ?> routeFlow = app
     }
 }
