@@ -28,5 +28,7 @@ public class TestMessage {
         return jsScript;
     }
 
-    public String
+    public String getFunctionName() {
+        return functionName;
+    }
 }
