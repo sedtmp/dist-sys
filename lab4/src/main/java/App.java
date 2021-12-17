@@ -16,6 +16,6 @@ public class App {
 
         ActorRef storeActor = system.actorOf(Props.create(StoreActor.class), Constants.STORE_ACTOR);
         ActorRef executeActor = system.actorOf(
-                new RoundRobinPool(Constants.POOL_NUMBER), )
+                new RoundRobinPool(Constants.POOL_NUMBER).props(), )
     }
 }
