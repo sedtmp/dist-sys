@@ -6,24 +6,23 @@ import java.util.ArrayList;
 
 public class Test implements Serializable {
     private final String TEST_NAME = "testName";
-    private final String TEST_NAME = "testName";
-    private final String TEST_NAME = "testName";
-    private final String TEST_NAME = "testName";
+    private final String EXPECTED_RESULT = "expectedResult";
+    private final String PARAMS = "params";
+    private final String RESULT = "result";
 
-    @JsonProperty("testName")
+    @JsonProperty(TEST_NAME)
     private final String testName;
 
-    @JsonProperty("expectedResult")
+    @JsonProperty(EXPECTED_RESULT)
     private final String expectedResult;
 
-    @JsonProperty("params")
+    @JsonProperty(PARAMS)
     private final ArrayList<Integer> params;
 
-    @JsonProperty("result")
+    @JsonProperty(RESULT)
     private final boolean result;
 
     @JsonCreator
-    public Test(String testName, String expectedResult, ArrayList<Integer> params) {
-        this.
+    public Test()
     }
 }
