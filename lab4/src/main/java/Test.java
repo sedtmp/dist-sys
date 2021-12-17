@@ -19,6 +19,6 @@ public class Test implements Serializable {
 
     @JsonCreator
     public Test(String testName, String expectedResult, ArrayList<Integer> params) {
-        
+        this.
     }
 }
