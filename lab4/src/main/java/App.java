@@ -53,6 +53,6 @@ public class App {
 
         App app = new App();
 
-        final Flow<HttpRequest, HttpResponse, ?> routeFlow = app.createRoute(storeActor,)
+        final Flow<HttpRequest, HttpResponse, ?> routeFlow = app.createRoute(storeActor, routeActor)
     }
 }
