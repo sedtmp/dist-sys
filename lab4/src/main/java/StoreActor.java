@@ -21,7 +21,7 @@ public class StoreActor extends AbstractActor {
                     storage.put(msg.getPackageId(), msg.getTests());
                 }
         ).match(GetMessage.class, req -> sender().tell(
-                new StoreMessage(req.getPackageId(), storage.get(req.getPackageId()))
+                new StoreMessage(req.getPackageId(), storage.get(req.getPackageId()), )
         ))
     }
 }
