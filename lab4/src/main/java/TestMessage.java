@@ -20,5 +20,5 @@ public class TestMessage {
         this.test = test;
     }
 
-    public Integer
+    public Integer getPackageId
 }
