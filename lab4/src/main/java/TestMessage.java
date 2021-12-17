@@ -9,6 +9,6 @@ public class TestMessage {
 
     @JsonCreator
     public TestMessage(
-            @JsonProperty(Constants.)
+            @JsonProperty(Constants.PACKAGE_ID)
     )
 }
