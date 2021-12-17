@@ -33,4 +33,8 @@ public class Test implements Serializable {
         this.params = params;
         this.result = false;
     }
+
+    public Test(TestMessage message) {
+        this.testName = message.getTest()
+    }
 }
