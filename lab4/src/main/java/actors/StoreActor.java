@@ -2,6 +2,7 @@ package actors;
 
 import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;
+import messages.GetMessage;
 import messages.StoreMessage;
 import tests.TestResult;
 
