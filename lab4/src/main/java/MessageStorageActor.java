@@ -34,13 +34,15 @@ public class MessageStorageActor extends AbstractActor {
             this.packageId = packageId;
         }
 
-        
+        public Integer getPackageId() {
+            return packageId;
+        }
     }
 
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create().match(
-                Tests.class, t -> {
+                StoreMessage.class, t -> {
                     if (storage.containsKey(t.getPackageId())) {
                         ArrayList<Test> tests = storage.get(t.getPackageId());
                         tests.addAll(t.getTests());
