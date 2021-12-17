@@ -4,13 +4,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class TestMessage {
     private final Integer packageId;
     private final String jsScript;
-    private final String functionTitle;
+    private final String functionName;
     private final Test test;
 
     @JsonCreator
     public TestMessage(
             @JsonProperty(Constants.PACKAGE_ID) Integer packageId,
             @JsonProperty(Constants.JS_SCRIPT) String jsScript,
-            @JsonProperty(Constants.FUNCTION_NAME) String 
+            @JsonProperty(Constants.FUNCTION_NAME) String functionName,
+            
     )
 }
