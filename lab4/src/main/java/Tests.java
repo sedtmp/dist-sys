@@ -15,6 +15,6 @@ public class Tests {
 
     @JsonCreator
     public Tests(
-            @JsonProperty()
+            @JsonProperty(PACKAGE_ID)
     )
 }
