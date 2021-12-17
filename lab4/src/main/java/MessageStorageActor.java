@@ -21,7 +21,9 @@ public class MessageStorageActor extends AbstractActor {
             return packageId;
         }
 
-        
+        public String getResult() {
+            return result;
+        }
     }
 
     @Override
