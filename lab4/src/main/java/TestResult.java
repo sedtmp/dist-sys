@@ -5,6 +5,13 @@ public class TestResult {
     public TestResult(Test test, String result) {
         this.test = test;
         this.result = result;
-        
+    }
+
+    public Test getTest() {
+        return test;
+    }
+
+    public String getResult() {
+        return result;
     }
 }
