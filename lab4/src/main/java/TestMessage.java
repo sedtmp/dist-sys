@@ -12,6 +12,8 @@ public class TestMessage {
             @JsonProperty(Constants.PACKAGE_ID) Integer packageId,
             @JsonProperty(Constants.JS_SCRIPT) String jsScript,
             @JsonProperty(Constants.FUNCTION_NAME) String functionName,
-            
-    )
+            @JsonProperty(Constants.TESTS) Test test
+    ) {
+        
+    }
 }
