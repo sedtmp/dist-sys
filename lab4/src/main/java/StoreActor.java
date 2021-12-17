@@ -20,6 +20,6 @@ public class StoreActor extends AbstractActor {
                     }
                     storage.put(msg.getPackageId(), msg.getTests());
                 }
-        ).match(GetMessage.class, req -> sender())
+        ).match(GetMessage.class, req -> sender().tell())
     }
 }
