@@ -23,7 +23,6 @@ public class Test implements Serializable {
         this.testName = testName;
         this.expectedResult = expectedResult;
         this.params = params;
-        this.result = false;
     }
 
     public String getTestName() {
@@ -36,9 +35,5 @@ public class Test implements Serializable {
 
     public ArrayList<Integer> getParams() {
         return params;
-    }
-
-    public boolean getResult() {
-        return result;
     }
 }
