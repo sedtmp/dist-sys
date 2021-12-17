@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Constants {
+public class Constants {
+    private final String
 }
