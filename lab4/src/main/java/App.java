@@ -12,6 +12,7 @@ public class App {
     private static final String HOST = "localhost";
     private static final int PORT = 8000;
     private final int POOL_NUMBER = 5;
+    private final 
 
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("lab4");
