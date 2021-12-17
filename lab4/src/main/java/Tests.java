@@ -18,6 +18,7 @@ public class Tests {
             @JsonProperty(PACKAGE_ID) Integer packageId,
             @JsonProperty(TEST) ArrayList<Test> tests
     ) {
-        this.
+        this.packageId = packageId;
+        this.tests = tests;
     }
 }
