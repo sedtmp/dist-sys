@@ -11,6 +11,6 @@ public class App {
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
 
-        storeActor = system.actorOf(Props.create(StoreActor.class), Constants.STORE_ACTOR_PATH);
+        storeActor = system.actorOf(Props.create(StoreActor.class), Constants.STORE_ACTOR);
     }
 }
