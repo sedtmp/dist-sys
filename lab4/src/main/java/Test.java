@@ -33,6 +33,4 @@ public class Test implements Serializable {
         this.params = params;
         this.result = false;
     }
-
-    
 }
