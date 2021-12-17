@@ -54,7 +54,7 @@ public class App {
 
         App app = new App();
 
-        final Flow<HttpRequest, HttpResponse, ?> routeFlow = app.createRoute(
+        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = app.createRoute(
                 storeActor,
                 routeActor
         ).flow(system, materializer);
