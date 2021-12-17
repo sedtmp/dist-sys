@@ -1,4 +1,5 @@
 import akka.actor.AbstractActor;
+import akka.japi.pf.ReceiveBuilder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +10,6 @@ public class TestsStorage extends AbstractActor {
 
     @Override
     public Receive createRecieve() {
-        return Receive.
+        return ReceiveBuilder.
     }
 }
