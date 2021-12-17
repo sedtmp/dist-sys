@@ -6,6 +6,7 @@ public class TestMessage {
     private final String jsScript;
     private final String functionName;
     private final Test test;
+    
 
     @JsonCreator
     public TestMessage(
