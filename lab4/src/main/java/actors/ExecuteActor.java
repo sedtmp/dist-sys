@@ -1,3 +1,5 @@
+package actors;
+
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.japi.pf.ReceiveBuilder;
@@ -22,7 +24,7 @@ public class ExecuteActor extends AbstractActor {
                 message.getFunctionName(),
                 message.getTest().getParams().toArray()
         ).toString();
-        Test test = 
+        Test test =
     }
 
     @Override
