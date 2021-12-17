@@ -1,2 +1,2 @@
-public class TestsStorage {
+public class TestsStorage extends {
 }
