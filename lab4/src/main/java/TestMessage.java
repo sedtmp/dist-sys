@@ -7,4 +7,5 @@ public class TestMessage {
     private final Test test;
 
     @JsonCreator
+    public 
 }
