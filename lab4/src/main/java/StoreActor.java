@@ -15,7 +15,7 @@ public class StoreActor extends AbstractActor {
                     if (storage.containsKey(msg.getPackageId())) {
                         ArrayList<Test> results = storage.get(msg.getPackageId());
                         results.addAll(msg.getTests());
-                        storage.replace(t.getPackageId(), tests);
+                        storage.replace(msg.getPackageId(), results);
                         return;
                     }
                     storage.put(t.getPackageId(), t.getTests());
