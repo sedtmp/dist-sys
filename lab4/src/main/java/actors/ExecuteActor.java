@@ -5,6 +5,8 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSelection;
 import akka.japi.pf.ReceiveBuilder;
 import constants.Constants;
+import messages.StoreMessage;
+import messages.TestMessage;
 import tests.Test;
 
 import javax.script.Invocable;
@@ -28,15 +30,26 @@ public class ExecuteActor extends AbstractActor {
         Invocable invocable = (Invocable) engine;
         String result = invocable.invokeFunction(functionName, params.toArray()).toString();
         Test test = new Test(testName, expectedResult, params, expectedResult.equals(result));
-        ArrayList<Test> tests = 
+        ArrayList<Test> tests = new ArrayList<Test>();
+        tests.add(test);
+        return tests;
     }
 
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create().match(
                 TestMessage.class, m ->  {
-
-                }
-        ).build();
+                    storeActor.tell(new StoreMessage(
+                            m.getPackageId(),
+                            execute(
+                                    m.getJsScript(),
+                                    m.getFunctionName(),
+                                    m.getTest().getTestName(),
+                                    m.getTest().getExpectedResult(),
+                                    m.getTest().getParams()
+                            )),
+                            self()
+                    );
+                }).build();
     }
 }
