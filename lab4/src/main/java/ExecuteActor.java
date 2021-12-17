@@ -1,5 +1,6 @@
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
+import akka.japi.pf.ReceiveBuilder;
 
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
@@ -23,6 +24,6 @@ public class ExecuteActor extends AbstractActor {
 
     @Override
     public Receive createReceive() {
-        return Receive.create().ma
+        return ReceiveBuilder
     }
 }
