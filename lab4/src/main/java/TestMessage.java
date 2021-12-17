@@ -24,5 +24,9 @@ public class TestMessage {
         return packageId;
     }
 
+    public String getJsScript() {
+        return jsScript;
+    }
+
     public
 }
