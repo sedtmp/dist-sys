@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Test implements Serializable {
-    private final String
+    private final String TEST_NAME = 
 
     @JsonProperty("testName")
     private final String testName;
