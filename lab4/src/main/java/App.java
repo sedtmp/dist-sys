@@ -58,6 +58,7 @@ public class App {
                 storeActor,
                 routeActor
         ).flow(system, materializer);
-        final ConnectHttp connectHttp = ConnectHttp.toHost(Constants.HOST, Constants)
+        final ConnectHttp connectHttp = ConnectHttp.toHost(Constants.HOST, Constants.PORT);
+        
     }
 }
