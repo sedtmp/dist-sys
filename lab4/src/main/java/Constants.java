@@ -8,5 +8,5 @@ public class Constants {
     public static final String JS_SCRIPT = "jsScript";
     public static final String FUNCTION_NAME = "functionName";
     public static final String TESTS = "tests";
-    public static final String ENGINE = "nash"
+    public static final String ENGINE = "nashorn";
 }
