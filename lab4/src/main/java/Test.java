@@ -1,2 +1,5 @@
-public class Test {
+import java.io.Serializable;
+
+public class Test implements Serializable {
+    
 }
