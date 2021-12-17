@@ -5,5 +5,5 @@ public class Constants {
     public static final String EXPECTED_RESULT = "expectedResult";
     public static final String PARAMS = "params";
     public static final String RESULT = "result";
-    public static final String 
+    public static final String JS_SCRIPT
 }
