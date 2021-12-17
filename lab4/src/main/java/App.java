@@ -9,7 +9,7 @@ import akka.stream.ActorMaterializer;
 import constants.Constants;
 
 public class App {
-    
+    private final int
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("lab4");
         final Http http = Http.get(system);
