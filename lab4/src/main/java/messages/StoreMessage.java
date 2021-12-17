@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import tests.Test;
 
-import java.util.ArrayList;
-
 public class StoreMessage {
     private final String PACKAGE_ID = "packageId";
     private final String TEST = "test";
@@ -14,22 +12,22 @@ public class StoreMessage {
     private final Integer packageId;
 
     @JsonProperty(TEST)
-    private final ArrayList<Test> tests;
+    private final Test test;
 
     @JsonCreator
     public StoreMessage (
             @JsonProperty(PACKAGE_ID) Integer packageId,
-            @JsonProperty(TEST) ArrayList<Test> tests
+            @JsonProperty(TEST) Test test
     ) {
         this.packageId = packageId;
-        this.tests = tests;
+        this.test = test;
     }
 
     public Integer getPackageId() {
         return packageId;
     }
 
-    public ArrayList<Test> getTests() {
-        return tests;
+    public Test getTests() {
+        return test;
     }
 }
