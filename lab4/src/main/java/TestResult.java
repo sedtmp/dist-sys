@@ -1,3 +1,3 @@
 public class TestResult {
-    private 
+    private final Test
 }
