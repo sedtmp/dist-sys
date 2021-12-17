@@ -10,5 +10,5 @@ public class Tests {
     private final Integer packageId;
 
     @JsonProperty(TEST)
-    private final ArrayList
+    private final ArrayList<Test>
 }
