@@ -1,3 +1,5 @@
 public class GetMessage {
-    private final Integer
+    private final Integer packageId;
+
+    
 }
