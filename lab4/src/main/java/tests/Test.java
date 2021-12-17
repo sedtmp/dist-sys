@@ -2,11 +2,11 @@ package tests;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import constants.Constants;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Test implements Serializable {
+public class Test {
     @JsonProperty(Constants.TEST_NAME)
     private final String testName;
 
@@ -15,6 +15,9 @@ public class Test implements Serializable {
 
     @JsonProperty(Constants.PARAMS)
     private final ArrayList<Integer> params;
+
+    @JsonProperty(Constants.RESULT)
+    private final boolean result;
 
     @JsonCreator
     public Test (
@@ -25,6 +28,14 @@ public class Test implements Serializable {
         this.testName = testName;
         this.expectedResult = expectedResult;
         this.params = params;
+        this.result = false;
+    }
+
+    public Test(String testName, String expectedResult, ArrayList<Integer> params, boolean result) {
+        this.testName = testName;
+        this.expectedResult = expectedResult;
+        this.params = params;
+        this.result = result;
     }
 
     public String getTestName() {
