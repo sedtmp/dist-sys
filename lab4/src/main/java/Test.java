@@ -4,5 +4,5 @@ import java.io.Serializable;
 
 public class Test implements Serializable {
     @JsonProperty
-    private final String 
+    private final String
 }
