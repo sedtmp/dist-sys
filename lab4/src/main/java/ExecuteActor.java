@@ -2,6 +2,7 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 
 import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 import java.util.ArrayList;
 
 public class ExecuteActor extends AbstractActor {
@@ -12,6 +13,6 @@ public class ExecuteActor extends AbstractActor {
     }
 
     private Test execute(TestMessage msg) {
-        ScriptEngine engine = new 
+        ScriptEngine engine = new ScriptEngineManager()
     }
 }
