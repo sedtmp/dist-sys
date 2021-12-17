@@ -1,3 +1,3 @@
 public class Constants {
-    private final String
+    public static final String
 }
