@@ -44,7 +44,7 @@ public class MessageStorageActor extends AbstractActor {
         return ReceiveBuilder.create().match(
                 StoreMessage.class, msg -> {
                     if (storage.containsKey(msg.getPackageId())) {
-                        ArrayList<Test> results = storage.get(msg.getPackageId());
+                        ArrayList<> results = storage.get(msg.getPackageId());
                         results.add(msg.getResult());
                         storage.replace(t.getPackageId(), tests);
                         return;
