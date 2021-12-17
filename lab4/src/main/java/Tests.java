@@ -3,7 +3,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
 
-public class Tests {
+public class StoreMessage {
     private final String PACKAGE_ID = "packageId";
     private final String TEST = "test";
 
