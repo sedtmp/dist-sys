@@ -1,4 +1,5 @@
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TestMessage {
     private final Integer packageId;
@@ -7,5 +8,7 @@ public class TestMessage {
     private final Test test;
 
     @JsonCreator
-    public TestMessage()
+    public TestMessage(
+            @JsonProperty(Constants.)
+    )
 }
