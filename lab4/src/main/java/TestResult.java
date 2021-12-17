@@ -1,3 +1,4 @@
 public class TestResult {
-    private final Test
+    private final Test test;
+    
 }
