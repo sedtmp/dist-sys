@@ -6,14 +6,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TestsStorage extends AbstractActor {
-    final Map<Integer, ArrayList<Test>> tests = new HashMap<>();
+    final Map<Integer, ArrayList<Test>> storage = new HashMap<>();
 
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create().match(
                 Tests.class, t -> {
-                    if (tests.containsKey(t.getPackageId())) {
-                        ArrayList<Test> 
+                    if (storage.containsKey(t.getPackageId())) {
+                        ArrayList<Test>
                     }
                 }
         )
