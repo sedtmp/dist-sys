@@ -14,6 +14,9 @@ public class TestMessage {
             @JsonProperty(Constants.FUNCTION_NAME) String functionName,
             @JsonProperty(Constants.TESTS) Test test
     ) {
-        
+        this.packageId = packageId;
+        this.jsScript = jsScript;
+        this.functionName = functionName;
+        this.test = test;
     }
 }
