@@ -29,12 +29,6 @@ public class Test implements Serializable {
         this.result = false;
     }
 
-    public Test (
-            TestMessage
-    ) {
-
-    }
-
     public String getTestName() {
         return testName;
     }
