@@ -10,7 +10,7 @@ import constants.Constants;
 
 public class App {
     private static final String HOST = "localhost";
-    private static final 
+    private static final int 
     private final int POOL_NUMBER = 5;
 
     public static void main(String[] args) {
