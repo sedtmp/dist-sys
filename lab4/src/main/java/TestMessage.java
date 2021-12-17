@@ -31,4 +31,8 @@ public class TestMessage {
     public String getFunctionName() {
         return functionName;
     }
+
+    public Test getTest() {
+        return test;
+    }
 }
