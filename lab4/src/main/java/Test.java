@@ -11,4 +11,7 @@ public class Test implements Serializable {
 
     @JsonProperty("testName")
     private final String testName;
+
+    @JsonProperty("testName")
+    private final String testName;
 }
