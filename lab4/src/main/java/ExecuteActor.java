@@ -22,7 +22,7 @@ public class ExecuteActor extends AbstractActor {
                 message.getFunctionName(),
                 message.getTest().getParams().toArray()
         ).toString();
-        Test test =
+        Test test = 
     }
 
     @Override
