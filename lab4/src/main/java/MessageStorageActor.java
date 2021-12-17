@@ -9,7 +9,8 @@ public class MessageStorageActor extends AbstractActor {
     final Map<Integer, ArrayList<Test>> storage = new HashMap<>();
 
     public static class StoreMessage {
-        private int
+        private int packageId;
+        
     }
 
     @Override
