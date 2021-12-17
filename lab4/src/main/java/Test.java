@@ -18,5 +18,5 @@ public class Test implements Serializable {
     private final boolean result;
 
     @JsonCreator
-    public Test(String testName, String expectedResult, )
+    public Test(String testName, String expectedResult, ArrayList<Integer> params, )
 }
