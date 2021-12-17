@@ -1,0 +1,10 @@
+/home/smegdm/dist-sys/lab4/src/main/java/actors/StoreActor.java
+/home/smegdm/dist-sys/lab4/src/main/java/App.java
+/home/smegdm/dist-sys/lab4/src/main/java/actors/RouteActor.java
+/home/smegdm/dist-sys/lab4/src/main/java/messages/GetMessage.java
+/home/smegdm/dist-sys/lab4/src/main/java/actors/ExecuteActor.java
+/home/smegdm/dist-sys/lab4/src/main/java/messages/PackageMessage.java
+/home/smegdm/dist-sys/lab4/src/main/java/tests/Test.java
+/home/smegdm/dist-sys/lab4/src/main/java/messages/TestMessage.java
+/home/smegdm/dist-sys/lab4/src/main/java/messages/StoreMessage.java
+/home/smegdm/dist-sys/lab4/src/main/java/constants/Constants.java
