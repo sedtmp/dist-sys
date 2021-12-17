@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
@@ -12,5 +13,5 @@ public class Tests {
     @JsonProperty(TEST)
     private final ArrayList<Test> tests;
 
-    
+    @JsonCreator
 }
