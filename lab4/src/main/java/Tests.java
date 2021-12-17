@@ -23,8 +23,10 @@ public class Tests {
     }
 
     public Integer getPackageId() {
-        return this.packageId;
+        return packageId;
     }
 
-    public ArrayList
+    public ArrayList<Test> getTests() {
+        return tests;
+    }
 }
