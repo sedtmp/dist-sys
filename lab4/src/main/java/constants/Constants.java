@@ -13,6 +13,7 @@ public class Constants {
     public static final String STORE_ACTOR_PATH = "/user/storeActor";
     public static final String STORE_ACTOR = "storeActor";
     public static final String ROUTE_ACTOR_PATH = "/user/routeActor";
+    public static final String EXECUTE_ACTOR = "executeActor";
     public static final String ENGINE = "nashorn";
 
     public static final String HOST = "localhost";
