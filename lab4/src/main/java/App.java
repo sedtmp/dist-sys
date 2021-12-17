@@ -1,3 +1,4 @@
+import actors.ExecuteActor;
 import actors.StoreActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -13,6 +14,6 @@ public class App {
         final ActorMaterializer materializer = ActorMaterializer.create(system);
 
         ActorRef storeActor = system.actorOf(Props.create(StoreActor.class), Constants.STORE_ACTOR);
-        ActorRef executeActor = 
+        ActorRef executeActor = system.actorOf(Props.create(ExecuteActor.class), )
     }
 }
