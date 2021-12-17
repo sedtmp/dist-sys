@@ -14,7 +14,7 @@ public class StoreMessage {
     private final ArrayList<Test> tests;
 
     @JsonCreator
-    public Tests(
+    public StoreMessage (
             @JsonProperty(PACKAGE_ID) Integer packageId,
             @JsonProperty(TEST) ArrayList<Test> tests
     ) {
