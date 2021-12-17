@@ -1,3 +1,3 @@
 public class TestMessage {
-    private final 
+    private final Integer
 }
