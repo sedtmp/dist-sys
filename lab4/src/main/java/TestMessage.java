@@ -1,5 +1,5 @@
 public class TestMessage {
-    private final String 
+    private final String
 
     private final Integer packageId;
     private final String jsScript;
