@@ -1,5 +1,8 @@
+package messages;
+
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import tests.Test;
 
 public class TestMessage {
     private final Integer packageId;
