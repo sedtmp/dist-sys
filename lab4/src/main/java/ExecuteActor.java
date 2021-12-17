@@ -3,7 +3,7 @@ import akka.actor.ActorRef;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import java.util.ArrayList;
+import javax.script.ScriptException;
 
 public class ExecuteActor extends AbstractActor {
     ActorRef storeActor;
@@ -12,9 +12,10 @@ public class ExecuteActor extends AbstractActor {
         this.storeActor = storeActor;
     }
 
-    private Test execute(TestMessage msg) {
+    private Test execute(TestMessage msg) throws ScriptException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(Constants.ENGINE);
         engine.eval(msg.getJsScript());
+        
 
     }
 }
