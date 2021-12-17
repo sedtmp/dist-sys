@@ -9,7 +9,7 @@ public class TestsStorage extends AbstractActor {
     final Map<Integer, ArrayList<Test>> tests = new HashMap<>();
 
     @Override
-    public Receive createRecieve() {
+    public Receive createReceive() {
         return ReceiveBuilder.create().match(
                 
         )
