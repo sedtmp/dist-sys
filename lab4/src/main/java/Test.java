@@ -17,5 +17,5 @@ public class Test implements Serializable {
     private final String result;
 
     @JsonCreator
-    public Test(String testName, )
+    public Test(String testName, String expectedResult, )
 }
