@@ -10,5 +10,5 @@ public class ExecuteActor extends AbstractActor {
         this.storeActor = storeActor;
     }
 
-    private Test execute(String script, String functionTitle, String testName, String expectedResult, ArrayList<>)
+    private Test execute(String script, String functionTitle, String testName, String expectedResult, ArrayList<Integer> params)
 }
