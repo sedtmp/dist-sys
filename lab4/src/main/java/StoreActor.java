@@ -10,7 +10,8 @@ public class StoreActor extends AbstractActor {
 
     @Override
     public Receive createReceive() {
-        return ReceiveBuilder.create().match(
+        return ReceiveBuilder.create()
+                .match(
                 StoreMessage.class, m -> {
                     if (storage.containsKey(m.getPackageId())) {
                         ArrayList<Test> results = storage.get(m.getPackageId());
@@ -19,8 +20,7 @@ public class StoreActor extends AbstractActor {
                         return;
                     }
                     storage.put(m.getPackageId(), m.getTests());
-                }
-        ).match(GetMessage.class, req -> sender().tell(
+                }).match(GetMessage.class, req -> sender().tell(
                 new StoreMessage(req.getPackageId(), storage.get(req.getPackageId())), self())
         ).build();
     }
