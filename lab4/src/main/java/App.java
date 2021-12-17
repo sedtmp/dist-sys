@@ -59,6 +59,6 @@ public class App {
                 routeActor
         ).flow(system, materializer);
         final ConnectHttp connectHttp = ConnectHttp.toHost(Constants.HOST, Constants.PORT);
-        http.bi
+        http.bindAndHandle()
     }
 }
