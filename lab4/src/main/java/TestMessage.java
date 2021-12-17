@@ -28,5 +28,5 @@ public class TestMessage {
         return jsScript;
     }
 
-    public
+    public String
 }
