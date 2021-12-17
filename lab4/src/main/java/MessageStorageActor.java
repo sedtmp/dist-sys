@@ -1,5 +1,6 @@
 import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;
+import scala.Int;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,7 +28,11 @@ public class MessageStorageActor extends AbstractActor {
     }
 
     public static class GetMessage {
-        private
+        private Integer packageId;
+
+        public GetMessage(Integer packageId) {
+            
+        }
     }
 
     @Override
