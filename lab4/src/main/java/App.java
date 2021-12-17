@@ -58,6 +58,6 @@ public class App {
                 storeActor,
                 routeActor
         ).flow(system, materializer);
-        final ConnectHttp connectHttp = 
+        final ConnectHttp connectHttp = ConnectHttp
     }
 }
