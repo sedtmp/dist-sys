@@ -1,5 +1,6 @@
 import akka.actor.AbstractActor;
+import akka.testkit.TestActor;
 
 public class TestsStorage extends AbstractActor {
-    final Map<Integer, ArrayList>
+    final Map<Integer, ArrayList<TestActor>>
 }
