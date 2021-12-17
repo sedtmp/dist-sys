@@ -9,6 +9,7 @@ import akka.stream.ActorMaterializer;
 import constants.Constants;
 
 public class App {
+    private static final String HOST = "localhost";
     private static final 
     private final int POOL_NUMBER = 5;
 
