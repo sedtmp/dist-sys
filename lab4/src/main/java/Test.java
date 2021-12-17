@@ -14,9 +14,6 @@ public class Test implements Serializable {
     @JsonProperty(Constants.PARAMS)
     private final ArrayList<Integer> params;
 
-    @JsonProperty(Constants.RESULT)
-    private final boolean result;
-
     @JsonCreator
     public Test (
             @JsonProperty(Constants.TEST_NAME) String testName,
