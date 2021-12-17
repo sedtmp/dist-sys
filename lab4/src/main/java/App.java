@@ -15,6 +15,7 @@ public class App {
         final ActorMaterializer materializer = ActorMaterializer.create(system);
 
         ActorRef storeActor = system.actorOf(Props.create(StoreActor.class), Constants.STORE_ACTOR);
-        ActorRef executeActor = system.actorOf(new RoundRobinPool(), )
+        ActorRef executeActor = system.actorOf(
+                new RoundRobinPool(Constants.POOL_NUMBER), )
     }
 }
