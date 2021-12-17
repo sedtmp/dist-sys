@@ -10,6 +10,6 @@ public class TestsStorage extends AbstractActor {
 
     @Override
     public Receive createRecieve() {
-        return ReceiveBuilder.create().
+        return ReceiveBuilder.create().match()
     }
 }
