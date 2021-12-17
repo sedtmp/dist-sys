@@ -14,4 +14,9 @@ public class Constants {
     public static final String STORE_ACTOR = "storeActor";
     public static final String ROUTE_ACTOR_PATH = "/user/routeActor";
     public static final String ENGINE = "nashorn";
+
+    public static final String HOST = "localhost";
+    public static final int PORT = 8080;
+    public static final int POOL_NUMBER = 5;
+    public static final int TIME_OUT_MILLIS = 5000;
 }
