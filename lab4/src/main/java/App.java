@@ -1,4 +1,5 @@
 import actors.ExecuteActor;
+import actors.RouteActor;
 import actors.StoreActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -19,6 +20,6 @@ public class App {
                 new RoundRobinPool(Constants.POOL_NUMBER).props(Props.create(ExecuteActor.class)),
                 Constants.EXECUTE_ACTOR
         );
-        ActorRef routeActor = system.actorOf(Props)
+        ActorRef routeActor = system.actorOf(Props.create(RouteActor.class))
     }
 }
