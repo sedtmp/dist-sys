@@ -18,7 +18,7 @@ public class StoreActor extends AbstractActor {
                         storage.replace(msg.getPackageId(), results);
                         return;
                     }
-                    storage.put(t.getPackageId(), t.getTests());
+                    storage.put(msg.getPackageId(), msg.getTests());
                 }
         ).match()
     }
