@@ -25,6 +25,6 @@ public class RouteActor extends AbstractActor {
                         );
                     }
                 }
-        )
+        ).build();
     }
 }
