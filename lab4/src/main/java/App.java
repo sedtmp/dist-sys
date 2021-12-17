@@ -9,7 +9,9 @@ import akka.stream.ActorMaterializer;
 import constants.Constants;
 
 public class App {
-    private final int
+    private static final 
+    private final int POOL_NUMBER = 5;
+
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("lab4");
         final Http http = Http.get(system);
