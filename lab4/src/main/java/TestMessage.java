@@ -1,4 +1,4 @@
 public class TestMessage {
     private final Integer packageId;
-    private final
+    private final String
 }
