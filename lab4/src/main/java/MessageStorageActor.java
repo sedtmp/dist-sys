@@ -9,10 +9,10 @@ public class MessageStorageActor extends AbstractActor {
     final Map<Integer, ArrayList<Test>> storage = new HashMap<>();
 
     public static class StoreMessage {
-        private int packageId;
+        private Integer packageId;
         private String result;
 
-        public StoreMessage
+        public StoreMessage()
     }
 
     @Override
