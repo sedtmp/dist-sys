@@ -10,7 +10,7 @@ public class MessageStorageActor extends AbstractActor {
 
     public static class StoreMessage {
         private int packageId;
-        
+        private 
     }
 
     @Override
