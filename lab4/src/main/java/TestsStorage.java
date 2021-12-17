@@ -1,5 +1,5 @@
 import akka.actor.AbstractActor;
 
 public class TestsStorage extends AbstractActor {
-    final Map<>
+    final Map<Integer, d>
 }
