@@ -20,6 +20,6 @@ public class TestsStorage extends AbstractActor {
                     }
                     storage.put(t.getPackageId(), t.getTests());
                 }
-        )
+        ).
     }
 }
