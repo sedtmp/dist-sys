@@ -23,12 +23,13 @@ public class Test {
     public Test (
             @JsonProperty(Constants.TEST_NAME) String testName,
             @JsonProperty(Constants.EXPECTED_RESULT) String expectedResult,
-            @JsonProperty(Constants.PARAMS) ArrayList<Integer> params
+            @JsonProperty(Constants.PARAMS) ArrayList<Integer> params,
+            @JsonProperty(Constants.RESULT) boolean result
     ) {
         this.testName = testName;
         this.expectedResult = expectedResult;
         this.params = params;
-        this.result = false;
+        this.result = result;
     }
 
     public String getTestName() {
