@@ -12,7 +12,7 @@ public class Test implements Serializable {
     private final String expectedResult;
 
     @JsonProperty("params")
-    private final ArrayList<> params;
+    private final ArrayList<Integer> params;
 
     @JsonProperty("result")
     private final String result;
