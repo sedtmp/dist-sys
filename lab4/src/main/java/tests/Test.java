@@ -31,13 +31,6 @@ public class Test {
         this.result = false;
     }
 
-    public Test(String testName, String expectedResult, ArrayList<Integer> params, boolean result) {
-        this.testName = testName;
-        this.expectedResult = expectedResult;
-        this.params = params;
-        this.result = result;
-    }
-
     public String getTestName() {
         return testName;
     }
