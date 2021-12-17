@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestsStorageActor extends AbstractActor {
+public class MessageStorageActor extends AbstractActor {
     final Map<Integer, ArrayList<Test>> storage = new HashMap<>();
 
     @Override
