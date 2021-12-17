@@ -13,11 +13,11 @@ public class ExecuteActor extends AbstractActor {
         this.storeActor = storeActor;
     }
 
-    private Test execute(TestMessage msg) throws ScriptException {
+    private Test execute(TestMessage msg) throws ScriptException, NoSuchMethodException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(Constants.ENGINE);
         engine.eval(msg.getJsScript());
         Invocable invocable = (Invocable) engine;
-        String result = invocable.invokeFunction(msg.getFunctionName())
+        String result = invocable.invokeFunction(msg.getFunctionName());
 
     }
 }
