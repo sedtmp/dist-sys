@@ -8,5 +8,5 @@ public class ExecuteActor extends AbstractActor {
         this.storeActor = storeActor;
     }
 
-    private Test execute(String script, String functionTitle, String testName, String expected)
+    private Test execute(String script, String functionTitle, String testName, String expectedResult)
 }
