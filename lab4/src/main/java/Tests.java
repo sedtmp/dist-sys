@@ -14,5 +14,7 @@ public class Tests {
     private final ArrayList<Test> tests;
 
     @JsonCreator
-    public Tests
+    public Tests(
+            
+    )
 }
