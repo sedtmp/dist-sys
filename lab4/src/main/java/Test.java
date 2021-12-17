@@ -29,5 +29,19 @@ public class Test implements Serializable {
         this.result = false;
     }
 
-    public 
+    public String getTestName() {
+        return testName;
+    }
+
+    public String getExpectedResult() {
+        return expectedResult;
+    }
+
+    public ArrayList<Integer> getParams() {
+        return params;
+    }
+
+    public boolean getResult() {
+        return result;
+    }
 }
