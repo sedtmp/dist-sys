@@ -22,5 +22,9 @@ public class Tests {
         this.tests = tests;
     }
 
-    public Integer 
+    public Integer getPackageId() {
+        return this.packageId;
+    }
+
+    public ArrayList
 }
