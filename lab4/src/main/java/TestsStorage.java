@@ -12,7 +12,7 @@ public class TestsStorage extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create().match(
                 Tests.class, t -> {
-                    if (tests.containsKey())
+                    if (tests.containsKey(t.getPackageId()))
                 }
         )
     }
