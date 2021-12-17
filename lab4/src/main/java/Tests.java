@@ -17,5 +17,7 @@ public class Tests {
     public Tests(
             @JsonProperty(PACKAGE_ID) Integer packageId,
             @JsonProperty(TEST) ArrayList<Test> tests
-    )
+    ) {
+        this.
+    }
 }
