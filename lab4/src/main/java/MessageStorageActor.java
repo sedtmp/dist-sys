@@ -12,7 +12,10 @@ public class MessageStorageActor extends AbstractActor {
         private Integer packageId;
         private String result;
 
-        public StoreMessage(Integer packageId, )
+        public StoreMessage(Integer packageId, String result) {
+            this.packageId = packageId;
+            this.result = result;
+        }
     }
 
     @Override
