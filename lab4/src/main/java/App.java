@@ -56,6 +56,6 @@ public class App {
         final Flow<HttpRequest, HttpResponse, ?> routeFlow = app.createRoute(
                 storeActor,
                 routeActor
-        ).
+        ).flow()
     }
 }
