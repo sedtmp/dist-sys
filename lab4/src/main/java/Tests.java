@@ -21,4 +21,6 @@ public class Tests {
         this.packageId = packageId;
         this.tests = tests;
     }
+
+    public Integer 
 }
