@@ -17,4 +17,5 @@ public class Test implements Serializable {
     private final String result;
 
     @JsonCreator
+    public 
 }
