@@ -10,6 +10,6 @@ public class TestMessage {
     @JsonCreator
     public TestMessage(
             @JsonProperty(Constants.PACKAGE_ID) Integer packageId,
-            @JsonProperty(Constants.JS_SCRIPT) 
+            @JsonProperty(Constants.JS_SCRIPT) String 
     )
 }
