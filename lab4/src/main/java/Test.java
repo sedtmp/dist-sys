@@ -24,7 +24,8 @@ public class Test implements Serializable {
 
     @JsonCreator
     public Test(
-            
-    )
+            @JsonProperty(TEST_NAME)
+    ) {
+
     }
 }
