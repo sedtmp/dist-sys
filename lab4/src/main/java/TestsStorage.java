@@ -13,7 +13,8 @@ public class TestsStorage extends AbstractActor {
         return ReceiveBuilder.create().match(
                 Tests.class, t -> {
                     if (storage.containsKey(t.getPackageId())) {
-                        ArrayList<Test> tests = storage.get(t.getPackageId())
+                        ArrayList<Test> tests = storage.get(t.getPackageId());
+                        
                     }
                 }
         )
