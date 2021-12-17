@@ -1,2 +1,5 @@
-public class ExecuteActor {
+import akka.actor.AbstractActor;
+
+public class ExecuteActor extends AbstractActor {
+    
 }
