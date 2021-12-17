@@ -1,3 +1,3 @@
 public class TestMessage {
-    private final Integer
+    private final Integer packageId
 }
