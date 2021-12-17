@@ -23,6 +23,8 @@ public class Test implements Serializable {
     private final boolean result;
 
     @JsonCreator
-    public Test()
+    public Test(
+            
+    )
     }
 }
