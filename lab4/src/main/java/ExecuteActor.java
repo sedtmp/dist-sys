@@ -14,6 +14,7 @@ public class ExecuteActor extends AbstractActor {
 
     private Test execute(TestMessage msg) {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(Constants.ENGINE);
-        
+        engine.eval(msg.getJsScript());
+
     }
 }
