@@ -22,5 +22,5 @@ public class ExecuteActor extends AbstractActor {
     }
 
     @Override
-    public Receive
+    public Receive createReceive()
 }
