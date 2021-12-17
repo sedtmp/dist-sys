@@ -16,6 +16,12 @@ public class MessageStorageActor extends AbstractActor {
             this.packageId = packageId;
             this.result = result;
         }
+
+        public Integer getPackageId() {
+            return packageId;
+        }
+
+        
     }
 
     @Override
