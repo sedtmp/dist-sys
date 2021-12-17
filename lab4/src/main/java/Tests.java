@@ -4,5 +4,6 @@ public class Tests {
     private final String PACKAGE_ID = "packageId";
     private final String TEST = "test";
 
-    @JsonProperty
+    @JsonProperty(PACKAGE_ID)
+    
 }
