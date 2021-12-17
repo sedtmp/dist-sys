@@ -3,5 +3,6 @@ import akka.actor.ActorRef;
 
 public class ExecuteActor extends AbstractActor {
     ActorRef storeActor;
-    
+
+    public ExecuteActor()
 }
