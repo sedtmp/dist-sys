@@ -11,8 +11,8 @@ import constants.Constants;
 public class App {
     private static final String HOST = "localhost";
     private static final int PORT = 8000;
-    private final int POOL_NUMBER = 5;
-    private final 
+    private static final int POOL_NUMBER = 5;
+    private static final 
 
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("lab4");
