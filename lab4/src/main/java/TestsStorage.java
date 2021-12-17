@@ -15,7 +15,9 @@ public class TestsStorage extends AbstractActor {
                     if (storage.containsKey(t.getPackageId())) {
                         ArrayList<Test> tests = storage.get(t.getPackageId());
                         tests.addAll(t.getTests());
-                        storage.replace(t.getPackageId())
+                        storage.replace(t.getPackageId(), tests);
+                    } else {
+                        
                     }
                 }
         )
