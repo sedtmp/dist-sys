@@ -1,2 +1,5 @@
-public class TestsStorage extends Abstract{
+import akka.actor.AbstractActor;
+
+public class TestsStorage extends AbstractActor {
+    
 }
