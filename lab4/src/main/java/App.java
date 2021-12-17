@@ -1,4 +1,5 @@
 import actors.StoreActor;
+import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.Http;
@@ -11,6 +12,7 @@ public class App {
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
 
-        storeActor = system.actorOf(Props.create(StoreActor.class), Constants.STORE_ACTOR);
+        ActorRef storeActor = system.actorOf(Props.create(StoreActor.class), Constants.STORE_ACTOR);
+        
     }
 }
