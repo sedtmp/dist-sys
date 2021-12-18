@@ -28,8 +28,6 @@ public class App {
                 ConnectHttp.toHost(Constants.HOST, Constants.PORT),
                 materializer
         );
-        System.out.println("Server online");
-        System.in.read();
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
     }
 }
