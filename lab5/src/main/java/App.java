@@ -10,6 +10,7 @@ import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
+import constants.Constants;
 
 import java.util.concurrent.CompletionStage;
 
@@ -23,7 +24,7 @@ public class App {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = creator.createFlow();
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp.toHost()
+                ConnectHttp.toHost(Constants.HOST)
         );
     }
 }
