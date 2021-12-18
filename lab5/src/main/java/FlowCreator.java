@@ -1,8 +1,9 @@
 import akka.actor.ActorRef;
+import akka.http.javadsl.Http;
 import akka.stream.Materializer;
 
 public class FlowCreator {
-    private
+    private final Http
     private final ActorRef cacheActor;
     private final Materializer materializer;
 
