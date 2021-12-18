@@ -3,7 +3,7 @@ import java.io.Serializable;
 public class Flights implements Serializable {
     private static final String OUTPUT_FORMAT = "MaxDelay: %d; Percent of delays: %d; Percent of cancelled: %d";
 
-    private float delayMaxTime;
+    private float ;
     private float cancelledCount;
     private int flightsCount;
     private int delaysCount;
