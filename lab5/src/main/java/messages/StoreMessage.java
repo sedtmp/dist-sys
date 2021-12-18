@@ -13,5 +13,7 @@ public class StoreMessage {
         return this.url;
     }
 
-    public Integer
+    public Integer getTime() {
+        return time;
+    }
 }
