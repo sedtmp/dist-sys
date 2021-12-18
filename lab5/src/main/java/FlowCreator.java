@@ -8,7 +8,7 @@ import akka.http.javadsl.model.Query;
 import akka.pattern.Patterns;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
-import javafx.util.Pair;
+import akka.japi.Pair;
 import messages.GetMessage;
 
 import java.time.Duration;
