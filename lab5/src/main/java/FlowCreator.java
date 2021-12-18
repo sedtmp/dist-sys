@@ -59,7 +59,8 @@ public class FlowCreator {
                         Flow<Pair<String, Integer>, Integer, NotUsed> flow = Flow.<Pair<String, Integer>>create()
                                 .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(), pair.first())))
                                 .mapAsync(req.second(), url -> {
-                                    long start = System
+                                    long start = System.currentTimeMillis();
+                                    
                                 });
                     });
                 })
