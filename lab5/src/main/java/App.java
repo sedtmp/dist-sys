@@ -28,6 +28,6 @@ public class App {
                 materializer
         );
         System.out.println("Server online");
-        System
+        System.in.read();
     }
 }
