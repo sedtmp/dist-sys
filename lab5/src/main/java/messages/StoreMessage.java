@@ -8,4 +8,6 @@ public class StoreMessage {
         this.url = url;
         this.time = time;
     }
+
+    public 
 }
