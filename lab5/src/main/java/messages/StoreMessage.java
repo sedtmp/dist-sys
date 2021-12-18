@@ -13,5 +13,5 @@ public class StoreMessage {
         return this.url;
     }
 
-    
+    public Integer
 }
