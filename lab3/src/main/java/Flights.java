@@ -3,7 +3,7 @@ import java.io.Serializable;
 public class Flights implements Serializable {
     private static final String OUTPUT_FORMAT = "MaxDelay: %d; Percent of delays: %d; Percent of cancelled: %d";
 
-    private float ;
+    private float maxArrDelay;
     private float cancelledCount;
     private int flightsCount;
     private int delaysCount;
@@ -21,8 +21,8 @@ public class Flights implements Serializable {
         this.delaysCount = delaysCount;
     }
 
-    public float getDelayMaxTime() {
-        return delayMaxTime;
+    public float getMaxArrDelay() {
+        return maxArrDelay;
     }
 
     public float getCancelledCount() {
@@ -41,7 +41,7 @@ public class Flights implements Serializable {
         return new Flights(
                 flights.getFlightsCount() + 1,
                 isDelayed ? flights.getDelaysCount() + 1 : flights.getDelaysCount(),
-                Math.max(flights.getDelayMaxTime())
+                Math.max(flights.getMaxArrDelay())
         );
     }
 
