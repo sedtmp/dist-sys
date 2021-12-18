@@ -33,7 +33,8 @@ public class FlowCreator {
         return Flow.of(HttpRequest.class)
                 .map(req -> {
                     Query query = req.getUri().query();
-                    String url = query.get(TEST_URL)
+                    String url = query.get(TEST_URL).get();
+                    
                 })
                 .mapAsync(MAP_ASYNC, req -> {})
                 .map(req -> {})
