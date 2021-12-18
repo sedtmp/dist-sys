@@ -4,6 +4,7 @@ import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
+import akka.http.javadsl.model.Query;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
 
@@ -30,7 +31,9 @@ public class FlowCreator {
 
     public Flow<HttpRequest, HttpResponse, NotUsed> createFlow() {
         return Flow.of(HttpRequest.class)
-                .map(req -> {})
+                .map(req -> {
+                    Query query
+                })
                 .mapAsync(MAP_ASYNC, req -> {})
                 .map(req -> {})
     }
