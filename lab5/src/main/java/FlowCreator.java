@@ -50,7 +50,7 @@ public class FlowCreator {
                             Duration.ofSeconds(TIME_OUT)
                     );
                     return stage.thenCompose(res -> {
-                        if ((Integer))
+                        if ((Integer) res >= 0)
                     });
                 })
                 .map(req -> {})
