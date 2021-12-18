@@ -33,7 +33,7 @@ public class App {
                     int destAirportId = Integer.parseInt(
                             table[Constants.NAMES_DEST_AIRPORT_ID]
                     );
-                    int originalAirportId =
+                    int originalAirportId = Integer.parseInt()
                 });
 
 
