@@ -17,8 +17,8 @@ public class CacheActor extends AbstractActor {
                     storage.putIfAbsent(m.getUrl(), m.getTime());
                 })
                 .match(GetMessage.class, req -> {
-                    getSender().tell();
-                    storage.getOrDefault(req.getUrl(), -1);
+                    getSender().tell(storage.getOrDefault(req.getUrl(), -1));
+                    ;
                 })
                 .build();
     }
