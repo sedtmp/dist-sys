@@ -12,6 +12,6 @@ public class App {
         ActorRef cacheActor = system.actorOf(Props.create(CacheActor.class));
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
-        final Flow<HttpRequest>
+        final Flow
     }
 }
