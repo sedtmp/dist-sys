@@ -13,6 +13,7 @@ import messages.GetMessage;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
@@ -57,7 +58,7 @@ public class FlowCreator {
                         }
                         Flow<Pair<String, Integer>, Integer, NotUsed> flow = Flow.<Pair<String, Integer>>create()
                                 .mapConcat(pair -> {
-                                    return new ArrayList<>(Col)
+                                    return new ArrayList<>(Collections.nCopies())
                                 })
                                 .mapAsync(req.second(), url -> {
 
