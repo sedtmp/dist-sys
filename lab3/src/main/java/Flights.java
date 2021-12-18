@@ -33,7 +33,7 @@ public class Flights implements Serializable {
         return flightsCount;
     }
 
-    public static merge(FlightData flightData) {
+    public static Flights merge(FlightData flightData) {
         if (flightData.getArrDelay() > delayMaxTime) {
             delayMaxTime = flightData.getArrDelay();
         }
