@@ -4,6 +4,7 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.Http;
+import akka.http.javadsl.ServerBinding;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
 import akka.stream.ActorMaterializer;
@@ -19,6 +20,6 @@ public class App {
         final ActorMaterializer materializer = ActorMaterializer.create(system);
         FlowCreator creator = new FlowCreator(http, system, cacheActor, materializer);
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = creator.createFlow();
-        final CompletionStage<>
+        final CompletionStage<ServerBinding>
     }
 }
