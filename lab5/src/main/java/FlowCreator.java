@@ -44,7 +44,7 @@ public class FlowCreator {
                     return new Pair<String, Integer>(url, count);
                 })
                 .mapAsync(MAP_ASYNC, req -> {
-                    CompletionStage<Object> stage = Patterns.ask(cacheActor, new GetMessage(req.first()), Duration.ofSeconds()
+                    CompletionStage<Object> stage = Patterns.ask(cacheActor, new GetMessage(req.first()), Duration.ofSeconds(TIME_OUT);
                 })
                 .map(req -> {})
     }
