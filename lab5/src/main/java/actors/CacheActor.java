@@ -2,6 +2,7 @@ package actors;
 
 import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;
+import messages.StoreMessage;
 
 import java.util.HashMap;
 
@@ -11,7 +12,7 @@ public class CacheActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match()
+                .match(StoreMessage)
                 .match()
                 .build();
     }
