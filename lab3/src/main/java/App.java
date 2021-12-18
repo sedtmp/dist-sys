@@ -12,7 +12,9 @@ public class App {
         return value.replaceAll(Constants.QUOTES, Constants.EMPTY_STRING);
     }
 
-    private static float checkNull()
+    private static float checkNull(String value) {
+        
+    }
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
