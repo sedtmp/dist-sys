@@ -23,5 +23,7 @@ public class FlowCreator {
         this.materializer = materializer;
     }
 
-    private Sink<Pair<String, Integer>, CompletionStage<Long>>
+    private Sink<Pair<String, Integer>, CompletionStage<Long>> createSink() {
+        
+    }
 }
