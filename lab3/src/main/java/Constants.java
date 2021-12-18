@@ -8,6 +8,8 @@ public class Constants {
     public final static String DELAYS_DELIMITER = ",";
     public final static int NAMES_DEST_AIRPORT_ID = 0;
     public final static int NAME_AIRPORT = 1;
+
+    public final static float ZERO = 0.0f;
     public final static String YEAR_COLUMN = "YEAR";
 
     public final static int ORIGIN_AIRPORT_ID = 11;

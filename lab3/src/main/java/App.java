@@ -14,7 +14,7 @@ public class App {
 
     private static float checkNull(String value) {
         if (value.equals(Constants.EMPTY_STRING)) {
-            
+            return 
         }
     }
 
