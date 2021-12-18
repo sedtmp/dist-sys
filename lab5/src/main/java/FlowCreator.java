@@ -8,7 +8,7 @@ import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
 
 public class FlowCreator {
-    private static final 
+    private static final int 
 
     private final Http http;
     private final ActorSystem system;
