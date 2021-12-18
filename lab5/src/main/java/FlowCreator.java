@@ -1,3 +1,4 @@
+import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
@@ -24,5 +25,5 @@ public class FlowCreator {
         this.materializer = materializer;
     }
 
-    public Flow<HttpRequest, HttpResponse, >
+    public Flow<HttpRequest, HttpResponse, NotUsed>
 }
