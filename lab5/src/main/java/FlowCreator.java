@@ -24,6 +24,6 @@ public class FlowCreator {
     }
 
     private Sink<Pair<String, Integer>, CompletionStage<Long>> createSink() {
-        return 
+        return Flow.
     }
 }
