@@ -32,7 +32,7 @@ public class FlowCreator {
     public Flow<HttpRequest, HttpResponse, NotUsed> createFlow() {
         return Flow.of(HttpRequest.class)
                 .map(req -> {
-                    Query query
+                    Query query = req.
                 })
                 .mapAsync(MAP_ASYNC, req -> {})
                 .map(req -> {})
