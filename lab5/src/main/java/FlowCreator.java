@@ -71,7 +71,7 @@ public class FlowCreator {
                         return Source
                                 .single(req)
                                 .via(flow)
-                                .toMat(Sink.fold())
+                                .toMat(Sink.fold((int) 0)
                     });
                 })
                 .map(req -> {})
