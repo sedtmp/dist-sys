@@ -4,5 +4,5 @@ public class StoreMessage {
     private String url;
     private Integer time;
 
-    
+    public 
 }
