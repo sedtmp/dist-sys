@@ -78,7 +78,7 @@ public class FlowCreator {
                     });
                 })
                 .map(req -> {
-                    cacheActor.tell();
+                    cacheActor.tell(new );
                 });
     }
 }
