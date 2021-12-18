@@ -68,6 +68,7 @@ public class FlowCreator {
                                     return CompletableFuture.completedFuture((int) (finish - start));
                                 });
                         return Source
+                                .single()
                     });
                 })
                 .map(req -> {})
