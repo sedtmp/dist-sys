@@ -27,6 +27,6 @@ public class App {
                 ConnectHttp.toHost(Constants.HOST, Constants.PORT),
                 materializer
         );
-        System
+        System.out.println("");
     }
 }
