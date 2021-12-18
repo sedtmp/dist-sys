@@ -7,8 +7,9 @@ import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.model.Query;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
-import constants.Constants;
 import javafx.util.Pair;
+
+import java.util.concurrent.CompletionStage;
 
 public class FlowCreator {
     private static final String TEST_URL = "testUrl";
@@ -40,7 +41,7 @@ public class FlowCreator {
                     return new Pair<String, Integer>(url, count);
                 })
                 .mapAsync(MAP_ASYNC, req -> {
-                    
+                    CompletionStage
                 })
                 .map(req -> {})
     }
