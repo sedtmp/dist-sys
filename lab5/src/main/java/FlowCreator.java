@@ -54,7 +54,8 @@ public class FlowCreator {
                         if ((Integer) res >= 0) {
                             return CompletableFuture.completedFuture(new Pair<>(req.first(), (Integer) res));
                         }
-                        Flow<Pair<String, Integer>, Integer, NotUsed> flow = Flow.<Pair<String, Integer>>
+                        Flow<Pair<String, Integer>, Integer, NotUsed> flow = Flow.<Pair<String, Integer>>create()
+                                .
                     });
                 })
                 .map(req -> {})
