@@ -8,56 +8,31 @@ import scala.Tuple2;
 import java.util.Map;
 
 public class App {
-    private final static String AIRPORTS_PATH = "L_AIRPORT_ID.csv";
-    private final static String FLIGHTS_PATH = "664600583_T_ONTIME_sample.csv";
-    private final static String CODE = "code";
-    private final static String QUOTES = "\"";
-    private final static String EMPTY_STRING = "";
-    private final static String NAMES_DELIMITER = "\",";
-    private final static String DELAYS_DELIMITER = ",";
-    private final static int NAMES_DEST_AIRPORT_ID = 0;
-    private final static int NAME_AIRPORT = 1;
-    private final static String YEAR_COLUMN = "YEAR";
-
-    public final static int ORIGIN_AIRPORT_ID = 11;
-    public final static int DEST_AIRPORT_ID = 14;
-    public final static int FLIGHT_DELAY = 17;
-    public final static int FLIGHT_CANCELLED = 19;
-
-    private static FlightData parseFlightData(String inputData) {
-        String[] data = inputData.split(",");
-        float delay = 0f;
-        if (!data[FLIGHT_DELAY].equals("")) {
-            delay = Float.parseFloat(data[FLIGHT_DELAY]);
-        }
-        float cancelled = 0f;
-        if (!data[FLIGHT_CANCELLED].equals("")) {
-            delay = Float.parseFloat(data[FLIGHT_CANCELLED]);
-        }
-        return new FlightData(delay, cancelled);
-    }
-
     private static String removeQuotes(String value) {
-        return value.replaceAll(QUOTES, EMPTY_STRING);
+        return value.replaceAll(Constants.QUOTES, Constants.EMPTY_STRING);
     }
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> flights = sc.textFile(FLIGHTS_PATH);
-        JavaRDD<String> airports = sc.textFile(AIRPORTS_PATH);
+        JavaRDD<String> flights = sc.textFile(Constants.FLIGHTS_PATH);
+        JavaRDD<String> airports = sc.textFile(Constants.AIRPORTS_PATH);
         JavaPairRDD<Integer, String> airportNamesData = airports
-                .filter(str -> !str.contains(CODE))
+                .filter(str -> !str.contains(Constants.CODE))
                 .mapToPair(value -> {
-                    String[] table = value.split(NAMES_DELIMITER);
-                    Integer destAirportId = Integer.valueOf(removeQuotes(table[NAMES_DEST_AIRPORT_ID]));
-                    return new Tuple2<>(destAirportId, table[NAME_AIRPORT]);
+                    String[] table = value.split(Constants.NAMES_DELIMITER);
+                    Integer destAirportId = Integer.valueOf(
+                            removeQuotes(table[Constants.NAMES_DEST_AIRPORT_ID])
+                    );
+                    return new Tuple2<>(destAirportId, table[Constants.NAME_AIRPORT]);
                 });
         JavaPairRDD<Tuple2<Integer, Integer>, FlightData> flightDelaysData = flights
-                .filter(str -> !str.contains(YEAR_COLUMN))
+                .filter(str -> !str.contains(Constants.YEAR_COLUMN))
                 .mapToPair(value -> {
-                    String[] table = value.split(DELAYS_DELIMITER);
-                    int destAirportId = Integer.parseInt(table[NAMES_DEST_AIRPORT_ID]);
+                    String[] table = value.split(Constants.DELAYS_DELIMITER);
+                    int destAirportId = Integer.parseInt(
+                            table[Constants.NAMES_DEST_AIRPORT_ID]
+                    );
                     int originalAirportId =
                 });
 
