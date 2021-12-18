@@ -12,6 +12,7 @@ import akka.japi.Pair;
 import messages.GetMessage;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
@@ -56,7 +57,7 @@ public class FlowCreator {
                         }
                         Flow<Pair<String, Integer>, Integer, NotUsed> flow = Flow.<Pair<String, Integer>>create()
                                 .mapConcat(pair -> {
-                                    
+                                    return new ArrayList<>()
                                 })
                                 .mapAsync(req.second(), url -> {
 
