@@ -2,6 +2,7 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
 import akka.stream.Materializer;
+import akka.stream.javadsl.Sink;
 
 public class FlowCreator {
     private final Http http;
