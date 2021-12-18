@@ -64,7 +64,7 @@ public class FlowCreator {
                                     long start = System.currentTimeMillis();
                                     asyncHttpClient().prepareGet(url).execute();
                                     long finish = System.currentTimeMillis();
-                                    return CompletableFuture.completedFuture((int) finish - start);
+                                    return CompletableFuture.completedFuture((int) (finish - start));
                                 });
                     });
                 })
