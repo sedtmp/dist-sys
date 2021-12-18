@@ -5,6 +5,8 @@ import akka.stream.Materializer;
 import akka.stream.javadsl.Sink;
 import javafx.util.Pair;
 
+import java.util.concurrent.CompletionStage;
+
 public class FlowCreator {
     private final Http http;
     private final ActorSystem system;
@@ -21,5 +23,5 @@ public class FlowCreator {
         this.materializer = materializer;
     }
 
-    private Sink<Pair<String, Integer>, Completi>
+    private Sink<Pair<String, Integer>, CompletionStage>
 }
