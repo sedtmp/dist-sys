@@ -34,7 +34,10 @@ public class Flights implements Serializable {
     }
 
     public static Flights merge(Flights flights, float maxArrDelay, boolean isDelayed, boolean isCancelled) {
-        return new Flights(flights.getFlightsCount())
+        return new Flights(
+                flights.getFlightsCount() + 1,
+                
+        );
     }
 
     public static Flights mergeAll(Flights data) {
