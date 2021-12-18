@@ -34,7 +34,7 @@ public class FlowCreator {
                 .map(req -> {
                     Query query = req.getUri().query();
                     String url = query.get(TEST_URL).get();
-                    int count = Integer.parseInt(query.)
+                    int count = Integer.parseInt(query.get())
                 })
                 .mapAsync(MAP_ASYNC, req -> {})
                 .map(req -> {})
