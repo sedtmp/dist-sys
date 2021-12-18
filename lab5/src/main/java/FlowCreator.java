@@ -23,7 +23,5 @@ public class FlowCreator {
         this.materializer = materializer;
     }
 
-    private Sink<Pair<String, Integer>, CompletionStage<Long>> createSink() {
-        return Flow.
-    }
+    public 
 }
