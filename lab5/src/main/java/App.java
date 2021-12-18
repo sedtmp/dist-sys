@@ -10,6 +10,6 @@ public class App {
         ActorSystem system = ActorSystem.create("lab5");
         ActorRef cacheActor = system.actorOf(Props.create(CacheActor.class));
         final Http http = Http.get(system);
-        final ActorMaterializer materializer
+        final ActorMaterializer materializer = ActorMaterializer
     }
 }
