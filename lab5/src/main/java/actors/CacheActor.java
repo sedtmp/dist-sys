@@ -13,7 +13,7 @@ public class CacheActor extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(StoreMessage.class, m -> {
-                    storage.putIfAbsent(m.getUrl(), )
+                    storage.putIfAbsent(m.getUrl(), m.getTime());
                 })
                 .match()
                 .build();
