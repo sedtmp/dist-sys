@@ -36,7 +36,7 @@ public class App {
                     int originalAirportId = Integer.parseInt(
                             table[Constants.ORIGIN_AIRPORT_ID]
                     );
-                    float arrDelay 
+                    float arrDelay = 
                 });
 
 
