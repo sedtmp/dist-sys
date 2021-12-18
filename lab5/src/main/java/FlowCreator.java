@@ -7,6 +7,7 @@ import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.model.Query;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
+import constants.Constants;
 
 public class FlowCreator {
     private static final String TEST_URL = "testUrl";
@@ -35,7 +36,7 @@ public class FlowCreator {
                     Query query = req.getUri().query();
                     String url = query.get(TEST_URL).get();
                     int count = Integer.parseInt(query.get(COUNT).get());
-                    System.out.println(url +);
+                    System.out.println(url + Constants.SPACE);
                 })
                 .mapAsync(MAP_ASYNC, req -> {})
                 .map(req -> {})
