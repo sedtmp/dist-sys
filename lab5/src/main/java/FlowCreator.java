@@ -47,9 +47,10 @@ public class FlowCreator {
                     CompletionStage<Object> stage = Patterns.ask(
                             cacheActor,
                             new GetMessage(req.first()),
-                            Duration.ofSeconds(TIME_OUT);
+                            Duration.ofSeconds(TIME_OUT)
+                    );
                     return stage.thenCompose(res -> {
-
+                        
                     });
                 })
                 .map(req -> {})
