@@ -34,7 +34,7 @@ public class Flights implements Serializable {
     }
 
     public static Flights merge(Flights flights, float maxArrDelay, boolean isDelayed, boolean isCancelled) {
-        return new
+        return new Flights()
     }
 
     public static Flights mergeAll(Flights data) {
