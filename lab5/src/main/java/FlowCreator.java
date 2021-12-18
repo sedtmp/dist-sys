@@ -32,6 +32,6 @@ public class FlowCreator {
         return Flow.of(HttpRequest.class)
                 .map(req -> {})
                 .mapAsync(MAP_ASYNC, req -> {})
-                .map
+                .map(req -> {})
     }
 }
