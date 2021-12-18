@@ -27,6 +27,7 @@ public class App {
                 ConnectHttp.toHost(Constants.HOST, Constants.PORT),
                 materializer
         );
-        System.out.println("");
+        System.out.println("Server online");
+        
     }
 }
