@@ -10,6 +10,7 @@ import java.util.Map;
 public class App {
     private final static String AIRPORTS_PATH = "L_AIRPORT_ID.csv";
     private final static String FLIGHTS_PATH = "664600583_T_ONTIME_sample.csv";
+    private final static String CODE = "code";
 
     public final static int ORIGIN_AIRPORT_ID = 11;
     public final static int DEST_AIRPORT_ID = 14;
@@ -34,14 +35,16 @@ public class App {
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> airports = sc.textFile(AIRPORTS_PATH);
         JavaRDD<String> flights = sc.textFile(FLIGHTS_PATH);
-        JavaPairRDD<Tuple2<Integer, Integer>, FlightData> pairFlightsRDD = flights.mapToPair(
-          s -> new Tuple2<>(
-                  new Tuple2<>(
-                          Integer.parseInt(s.split(",")[ORIGIN_AIRPORT_ID]),
-                          Integer.parseInt(s.split(",")[DEST_AIRPORT_ID])),
-                  parseFlightData(s)
-          )
-        );
+        JavaPairRDD<Tuple2<Integer, Integer>, FlightData> pairFlightsRDD = flights
+                .filter(str -> !str.contains(CODE))
+                .mapToPair(
+                        s -> new Tuple2<>(
+                                new Tuple2<>(
+                                        Integer.parseInt(s.split(",")[ORIGIN_AIRPORT_ID]),
+                                        Integer.parseInt(s.split(",")[DEST_AIRPORT_ID])),
+                                parseFlightData(s)
+                        )
+                );
         JavaPairRDD<Tuple2<Integer, Integer>, FlightsSerializable> reducesFlightsRDD = pairFlightsRDD.aggregateByKey(
                 new FlightsSerializable(),
                 (a, b) -> {
