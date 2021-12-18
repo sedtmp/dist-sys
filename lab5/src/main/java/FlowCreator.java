@@ -7,9 +7,9 @@ import akka.http.javadsl.model.HttpResponse;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
 
-import java.util.concurrent.CompletionStage;
-
 public class FlowCreator {
+    private final 
+
     private final Http http;
     private final ActorSystem system;
     private final ActorRef cacheActor;
