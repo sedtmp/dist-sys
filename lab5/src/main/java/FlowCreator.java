@@ -73,7 +73,8 @@ public class FlowCreator {
                                 .single(req)
                                 .via(flow)
                                 .toMat(Sink.fold((int) 0, Integer::sum), Keep.right())
-                                .run
+                                .run(materializer)
+                                .
                     });
                 })
                 .map(req -> {})
