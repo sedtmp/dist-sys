@@ -9,5 +9,5 @@ public class StoreMessage {
         this.time = time;
     }
 
-    public 
+    public String getUrl
 }
