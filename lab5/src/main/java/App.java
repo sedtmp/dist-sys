@@ -25,7 +25,7 @@ public class App {
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
                 ConnectHttp.toHost(Constants.HOST, Constants.PORT),
-                
+                materializer
         );
     }
 }
