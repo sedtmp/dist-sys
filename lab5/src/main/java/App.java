@@ -30,5 +30,6 @@ public class App {
         );
         System.out.println("Server online");
         System.in.read();
+        binding
     }
 }
