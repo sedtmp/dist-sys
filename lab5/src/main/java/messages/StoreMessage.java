@@ -1,5 +1,6 @@
 package messages;
 
 public class StoreMessage {
-    private 
+    private String url;
+    
 }
