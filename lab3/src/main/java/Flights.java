@@ -41,7 +41,7 @@ public class Flights implements Serializable {
         return new Flights(
                 flights.getFlightsCount() + 1,
                 isDelayed ? flights.getDelaysCount() + 1 : flights.getDelaysCount(),
-                Math.max(flights.)
+                Math.max(flights.getDelayMaxTime())
         );
     }
 
