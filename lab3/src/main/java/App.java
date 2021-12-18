@@ -17,6 +17,7 @@ public class App {
     private final static String DELAYS_DELIMITER = ",";
     private final static int NAMES_DEST_AIRPORT_ID = 0;
     private final static int NAME_AIRPORT = 1;
+    private final static String YEAR_COLUMN = "YEAR";
 
     public final static int ORIGIN_AIRPORT_ID = 11;
     public final static int DEST_AIRPORT_ID = 14;
@@ -45,14 +46,20 @@ public class App {
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> flights = sc.textFile(FLIGHTS_PATH);
         JavaRDD<String> airports = sc.textFile(AIRPORTS_PATH);
-        JavaPairRDD<Integer, String> airportsData = airports
+        JavaPairRDD<Integer, String> airportNamesData = airports
                 .filter(str -> !str.contains(CODE))
                 .mapToPair(value -> {
                     String[] table = value.split(NAMES_DELIMITER);
                     Integer destAirportId = Integer.valueOf(removeQuotes(table[NAMES_DEST_AIRPORT_ID]));
                     return new Tuple2<>(destAirportId, table[NAME_AIRPORT]);
                 });
-        JavaPairRDD<Tuple2>
+        JavaPairRDD<Tuple2<Integer, Integer>, FlightData> flightDelaysData = flights
+                .filter(str -> !str.contains(YEAR_COLUMN))
+                .mapToPair(value -> {
+                    String[] table = value.split(DELAYS_DELIMITER);
+                    int destAirportId = Integer.parseInt(table[NAMES_DEST_AIRPORT_ID]);
+                    int originalAirportId =
+                });
 
 
         JavaPairRDD<Tuple2<Integer, Integer>, FlightData> pairFlightsRDD = flights
