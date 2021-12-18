@@ -37,7 +37,7 @@ public class FlowCreator {
                     Query query = req.getUri().query();
                     String url = query.get(TEST_URL).get();
                     int count = Integer.parseInt(query.get(COUNT).get());
-                    return new Pair<>
+                    return new Pair<String, Integer>
                 })
                 .mapAsync(MAP_ASYNC, req -> {})
                 .map(req -> {})
