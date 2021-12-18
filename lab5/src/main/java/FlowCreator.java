@@ -79,7 +79,7 @@ public class FlowCreator {
                     });
                 })
                 .map(req -> {
-                    cacheActor.tell(new StoreMessage());
+                    cacheActor.tell(new StoreMessage(req.first()));
                 });
     }
 }
