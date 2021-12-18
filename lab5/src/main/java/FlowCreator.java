@@ -13,6 +13,7 @@ import akka.stream.javadsl.Keep;
 import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
 import messages.GetMessage;
+import messages.StoreMessage;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -78,7 +79,7 @@ public class FlowCreator {
                     });
                 })
                 .map(req -> {
-                    cacheActor.tell(new );
+                    cacheActor.tell(new StoreMessage());
                 });
     }
 }
