@@ -63,7 +63,7 @@ public class FlowCreator {
                                 .mapAsync(req.second(), url -> {
                                     long start = System.currentTimeMillis();
                                     asyncHttpClient().prepareGet(url).execute();
-                                    long finish
+                                    long finish = System
                                 });
                     });
                 })
