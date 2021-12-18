@@ -56,11 +56,11 @@ public class FlowCreator {
                         }
                         Flow<Pair<String, Integer>, Integer, NotUsed> flow = Flow.<Pair<String, Integer>>create()
                                 .mapConcat(pair -> {
-
-                                })
-                                .mapAsync(req.second(), url -> {
                                     
                                 })
+                                .mapAsync(req.second(), url -> {
+
+                                });
                     });
                 })
                 .map(req -> {})
