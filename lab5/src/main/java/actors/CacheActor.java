@@ -1,6 +1,7 @@
 package actors;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import akka.japi.pf.ReceiveBuilder;
 import messages.GetMessage;
 import messages.StoreMessage;
@@ -17,8 +18,10 @@ public class CacheActor extends AbstractActor {
                     storage.putIfAbsent(m.getUrl(), m.getTime());
                 })
                 .match(GetMessage.class, req -> {
-                    getSender().tell(storage.getOrDefault(req.getUrl(), -1));
-                    ;
+                    getSender().tell(
+                            storage.getOrDefault(req.getUrl(), -1),
+                            ActorRef.noSender()
+                    );
                 })
                 .build();
     }
