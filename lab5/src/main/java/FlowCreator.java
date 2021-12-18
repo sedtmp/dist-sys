@@ -9,7 +9,7 @@ import akka.stream.javadsl.Flow;
 
 public class FlowCreator {
     private static final String TEST_URL = "testUrl";
-    private static final 
+    private static final String COUNT = 
 
     private static final int MAP_ASYNC = 1;
 
