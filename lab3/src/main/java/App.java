@@ -12,6 +12,8 @@ public class App {
         return value.replaceAll(Constants.QUOTES, Constants.EMPTY_STRING);
     }
 
+    private
+
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
@@ -36,7 +38,7 @@ public class App {
                     int originalAirportId = Integer.parseInt(
                             table[Constants.ORIGIN_AIRPORT_ID]
                     );
-                    float arrDelay = 
+                    float arrDelay =
                 });
 
 
