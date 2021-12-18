@@ -12,10 +12,11 @@ import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import constants.Constants;
 
+import java.io.IOException;
 import java.util.concurrent.CompletionStage;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ActorSystem system = ActorSystem.create("lab5");
         ActorRef cacheActor = system.actorOf(Props.create(CacheActor.class));
         final Http http = Http.get(system);
