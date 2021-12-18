@@ -1,3 +1,5 @@
-public class GetMessage {
+package messages;
 
+public class GetMessage {
+    
 }
