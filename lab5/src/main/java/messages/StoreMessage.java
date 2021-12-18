@@ -5,6 +5,7 @@ public class StoreMessage {
     private Integer time;
 
     public StoreMessage(String url, Integer time) {
-        
+        this.url = url;
+        this.time = time;
     }
 }
