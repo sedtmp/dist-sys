@@ -3,6 +3,7 @@ import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Sink;
+import javafx.util.Pair;
 
 public class FlowCreator {
     private final Http http;
@@ -20,5 +21,5 @@ public class FlowCreator {
         this.materializer = materializer;
     }
 
-    private Sink<Pair<>>
+    private Sink<Pair<String, Integer>>
 }
