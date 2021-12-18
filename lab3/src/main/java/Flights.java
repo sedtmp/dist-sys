@@ -34,11 +34,11 @@ public class Flights implements Serializable {
     }
 
     public void merge(FlightData flightData) {
-        if (flightData.getDelay() > delayMaxTime) {
-            delayMaxTime = flightData.getDelay();
+        if (flightData.getArrDelay() > delayMaxTime) {
+            delayMaxTime = flightData.getArrDelay();
         }
         flightsCount++;
-        if (flightData.getDelay() < 0f || flightData.getCancelled() == 1f) {
+        if (flightData.getArrDelay() < 0f || flightData.getCancelled() == 1f) {
             flightsCount++;
         }
     }
