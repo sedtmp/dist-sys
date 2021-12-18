@@ -19,5 +19,5 @@ public class FlowCreator {
         this.materializer = materializer;
     }
 
-    private
+    private Sink
 }
