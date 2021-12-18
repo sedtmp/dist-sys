@@ -1,5 +1,6 @@
 package messages;
 
 public class GetMessage {
-    private 
+    private String url;
+    
 }
