@@ -10,6 +10,8 @@ public class StoreMessage {
     }
 
     public String getUrl() {
-        return this.url
+        return this.url;
     }
+
+    
 }
