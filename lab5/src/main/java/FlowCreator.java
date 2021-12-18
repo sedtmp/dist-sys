@@ -17,6 +17,8 @@ import java.util.Collections;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
+import static org.asynchttpclient.Dsl.asyncHttpClient;
+
 public class FlowCreator {
     private static final String TEST_URL = "testUrl";
     private static final String COUNT = "count";
@@ -60,7 +62,7 @@ public class FlowCreator {
                                 .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(), pair.first())))
                                 .mapAsync(req.second(), url -> {
                                     long start = System.currentTimeMillis();
-                                    asyncHttpClient
+                                    asyncHttpClient().
                                 });
                     });
                 })
