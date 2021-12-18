@@ -12,6 +12,7 @@ import akka.japi.Pair;
 import messages.GetMessage;
 
 import java.time.Duration;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
 public class FlowCreator {
@@ -51,7 +52,7 @@ public class FlowCreator {
                     );
                     return stage.thenCompose(res -> {
                         if ((Integer) res >= 0) {
-                            return 
+                            return CompletableFuture
                         }
                     });
                 })
