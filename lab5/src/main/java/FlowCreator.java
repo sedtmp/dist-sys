@@ -57,11 +57,9 @@ public class FlowCreator {
                             return CompletableFuture.completedFuture(new Pair<>(req.first(), (Integer) res));
                         }
                         Flow<Pair<String, Integer>, Integer, NotUsed> flow = Flow.<Pair<String, Integer>>create()
-                                .mapConcat(pair -> {
-                                    return new ArrayList<>(Collections.nCopies(pair.second(), pair.first()))
-                                })
+                                .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(), pair.first())))
                                 .mapAsync(req.second(), url -> {
-
+                                    
                                 });
                     });
                 })
