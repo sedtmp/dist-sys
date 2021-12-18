@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class FlightsSerializable implements Serializable {
+public class Flights implements Serializable {
     private static final String OUTPUT_FORMAT = "MaxDelay: %d; Percent of delays: %d; Percent of cancelled: %d";
 
     private float delayMaxTime;
@@ -8,9 +8,9 @@ public class FlightsSerializable implements Serializable {
     private int flightsCount;
     private int delaysCount;
 
-    public FlightsSerializable() {}
+    public Flights() {}
 
-    public FlightsSerializable(
+    public Flights (
             float delayMaxTime,
             float cancelledFlights,
             int flightsCount,
@@ -43,24 +43,25 @@ public class FlightsSerializable implements Serializable {
         }
     }
 
-    public void mergeAll(FlightsSerializable data) {
+    public void mergeAll(Flights data) {
         if (data.getDelayMaxTime() > delayMaxTime) {
             delayMaxTime = data.getDelayMaxTime();
         }
         flightsCount += data.getFlightsCount();
-        cancelledCount += data.getCancelledFlights();
+        cancelledCount += data.getCancelledCount();
     }
 
     public float calcCancelledPercent() {
-        return cancelledFlights / (float) flightsCount * 100;
+        return cancelledCount / (float) flightsCount * 100;
     }
 
     public float calcDelaysPercent() {
-        retun
+        return delaysCount / (float) flightsCount * 100;
     }
 
-    public String toOutString() {
+    public String toOutputString() {
         float cancelledPercent = calcCancelledPercent();
-        return String.format(OUTPUT_FORMAT, delayMaxTime, flightsCount, )
+        float delaysPercent = calcDelaysPercent();
+        return String.format(OUTPUT_FORMAT, delayMaxTime, delaysPercent, cancelledPercent);
     }
 }

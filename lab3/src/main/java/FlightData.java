@@ -1,29 +1,33 @@
 import java.io.Serializable;
 
 public class FlightData implements Serializable {
-    private float delay;
+    private int destAirportId;
+    private int originAirportId;
+    private float arrDelay;
     private float cancelled;
 
     public FlightData() {}
 
-    public FlightData(float delay, float cancelled) {
-        this.delay = delay;
+    public FlightData(int destAirportId, int originAirportId, float arrDelay, float cancelled) {
+        this.destAirportId = destAirportId;
+        this.originAirportId = originAirportId;
+        this.arrDelay = arrDelay;
         this.cancelled = cancelled;
     }
 
-    public float getDelay() {
-        return delay;
+    public float getArrDelay() {
+        return arrDelay;
     }
 
     public float getCancelled() {
         return cancelled;
     }
 
-    public void setDelay(float delay) {
-        this.delay = delay;
+    public int getDestAirportId() {
+        return destAirportId;
     }
 
-    public void setCancelled(float cancelled) {
-        this.cancelled = cancelled;
+    public int getOriginAirportId() {
+        return  originAirportId;
     }
 }
