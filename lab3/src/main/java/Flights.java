@@ -36,7 +36,7 @@ public class Flights implements Serializable {
     public static Flights merge(Flights flights, float maxArrDelay, boolean isDelayed, boolean isCancelled) {
         return new Flights(
                 flights.getFlightsCount() + 1,
-                isDelayed ? 
+                isDelayed ? flights.ge
         );
     }
 
