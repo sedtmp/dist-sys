@@ -77,6 +77,8 @@ public class FlowCreator {
                                 .thenApply(sum -> new Pair<>(req.first(), (sum / req.second())));
                     });
                 })
-                .map(req -> {})
+                .map(req -> {
+                    
+                });
     }
 }
