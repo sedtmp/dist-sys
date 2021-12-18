@@ -30,6 +30,6 @@ public class App {
         );
         System.out.println("Server online");
         System.in.read();
-        binding.thenCompose(ServerBinding::unbind)
+        binding.thenCompose(ServerBinding::unbind).thenAccept()
     }
 }
