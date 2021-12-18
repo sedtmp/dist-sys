@@ -16,7 +16,7 @@ public class App {
         if (value.equals(Constants.EMPTY_STRING)) {
             return Constants.ZERO;
         }
-        return Float.parseFloat()
+        return Float.parseFloat(value);
     }
 
     public static void main(String[] args) {
