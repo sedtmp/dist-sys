@@ -70,7 +70,7 @@ public class FlowCreator {
                         return Source
                                 .single(req)
                                 .via(flow)
-                                .toMat()
+                                .toMat(Sink.)
                     });
                 })
                 .map(req -> {})
