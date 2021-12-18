@@ -14,6 +14,6 @@ public class Constants {
 
     public final static int ORIGIN_AIRPORT_ID = 11;
     public final static int DEST_AIRPORT_ID = 14;
-    public final static int FLIGHT_DELAY = 17;
+    public final static int ARR_DELAY = 17;
     public final static int FLIGHT_CANCELLED = 19;
 }
