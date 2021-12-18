@@ -23,7 +23,7 @@ public class App {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = creator.createFlow();
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp
+                ConnectHttp.toHost()
         );
     }
 }
