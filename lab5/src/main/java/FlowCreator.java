@@ -80,7 +80,7 @@ public class FlowCreator {
                 })
                 .map(req -> {
                     cacheActor.tell(new StoreMessage(req.first(), req.second()), ActorRef.noSender());
-                    return HttpResponse.create().withEntity(req.second())
+                    return HttpResponse.create().withEntity(req.second().toString())
                 });
     }
 }
