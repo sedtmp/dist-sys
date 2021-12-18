@@ -52,7 +52,7 @@ public class FlowCreator {
                     );
                     return stage.thenCompose(res -> {
                         if ((Integer) res >= 0) {
-                            return CompletableFuture
+                            return CompletableFuture.completedFuture()
                         }
                     });
                 })
