@@ -23,5 +23,5 @@ public class FlowCreator {
         this.materializer = materializer;
     }
 
-    public Flow<HttpRequest>
+    public Flow<HttpRequest, Http>
 }
