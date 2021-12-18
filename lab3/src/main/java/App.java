@@ -11,6 +11,12 @@ public class App {
     private final static String AIRPORTS_PATH = "L_AIRPORT_ID.csv";
     private final static String FLIGHTS_PATH = "664600583_T_ONTIME_sample.csv";
     private final static String CODE = "code";
+    private final static String QUOTES = "\"";
+    private final static String EMPTY_STRING = "";
+    private final static String NAMES_DELIMITER = "\",";
+    private final static String DELAYS_DELIMITER = ",";
+    private final static int NAMES_DEST_AIRPORT_ID = 0;
+    private final static int NAME_AIRPORT = 1;
 
     public final static int ORIGIN_AIRPORT_ID = 11;
     public final static int DEST_AIRPORT_ID = 14;
@@ -30,11 +36,25 @@ public class App {
         return new FlightData(delay, cancelled);
     }
 
+    private static String removeQuotes(String value) {
+        return value.replaceAll(QUOTES, EMPTY_STRING);
+    }
+
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> airports = sc.textFile(AIRPORTS_PATH);
         JavaRDD<String> flights = sc.textFile(FLIGHTS_PATH);
+        JavaRDD<String> airports = sc.textFile(AIRPORTS_PATH);
+        JavaPairRDD<Integer, String> airportsData = airports
+                .filter(str -> !str.contains(CODE))
+                .mapToPair(value -> {
+                    String[] table = value.split(NAMES_DELIMITER);
+                    Integer destAirportId = Integer.valueOf(removeQuotes(table[NAMES_DEST_AIRPORT_ID]));
+                    return new Tuple2<>(destAirportId, table[NAME_AIRPORT]);
+                });
+        JavaPairRDD<Tuple2>
+
+
         JavaPairRDD<Tuple2<Integer, Integer>, FlightData> pairFlightsRDD = flights
                 .filter(str -> !str.contains(CODE))
                 .mapToPair(
