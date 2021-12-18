@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ab030f-6631-479c-9ce7-4de988e5692c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlowCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlowCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
