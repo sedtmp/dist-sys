@@ -9,6 +9,7 @@ import akka.pattern.Patterns;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
 import javafx.util.Pair;
+import messages.GetMessage;
 
 import java.util.concurrent.CompletionStage;
 
@@ -42,7 +43,7 @@ public class FlowCreator {
                     return new Pair<String, Integer>(url, count);
                 })
                 .mapAsync(MAP_ASYNC, req -> {
-                    CompletionStage<Object> stage = Patterns.ask(cacheActor)
+                    CompletionStage<Object> stage = Patterns.ask(cacheActor, new GetMessage())
                 })
                 .map(req -> {})
     }
