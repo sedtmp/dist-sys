@@ -13,7 +13,6 @@ public class FlowCreator {
     private static final int MAP_ASYNC = 1;
     private static final int TIME_OUT = 5;
 
-
     private final Http http;
     private final ActorSystem system;
     private final ActorRef cacheActor;
