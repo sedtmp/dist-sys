@@ -41,7 +41,7 @@ public class FlowCreator {
                     return new Pair<String, Integer>(url, count);
                 })
                 .mapAsync(MAP_ASYNC, req -> {
-                    CompletionStage<Object>
+                    CompletionStage<Object> stage = 
                 })
                 .map(req -> {})
     }
