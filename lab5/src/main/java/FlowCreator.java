@@ -1,3 +1,5 @@
+import akka.actor.ActorRef;
+
 public class FlowCreator {
-    private final cacheActor
+    private final ActorRef cacheActor;
 }
