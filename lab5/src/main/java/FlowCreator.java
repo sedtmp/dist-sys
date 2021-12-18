@@ -3,7 +3,7 @@ import akka.http.javadsl.Http;
 import akka.stream.Materializer;
 
 public class FlowCreator {
-    private final Http
+    private final Http http;
     private final ActorRef cacheActor;
     private final Materializer materializer;
 
