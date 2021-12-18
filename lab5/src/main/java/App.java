@@ -4,6 +4,6 @@ import akka.actor.ActorSystem;
 public class App {
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("lab5");
-        ActorRef cacheActor = system
+        ActorRef cacheActor = system.actorOf()
     }
 }
