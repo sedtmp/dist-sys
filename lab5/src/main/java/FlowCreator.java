@@ -12,6 +12,7 @@ import akka.japi.Pair;
 import akka.stream.javadsl.Keep;
 import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
+import constants.Constants;
 import messages.GetMessage;
 import messages.StoreMessage;
 
@@ -80,7 +81,7 @@ public class FlowCreator {
                 })
                 .map(req -> {
                     cacheActor.tell(new StoreMessage(req.first(), req.second()), ActorRef.noSender());
-                    return HttpResponse.create().withEntity(req.second().toString())
+                    return HttpResponse.create().withEntity(req.second().toString() + Constants.NEW_LINE);
                 });
     }
 }
