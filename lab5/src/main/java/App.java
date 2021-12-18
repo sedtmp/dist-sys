@@ -1,4 +1,5 @@
 import actors.CacheActor;
+import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
@@ -14,6 +15,6 @@ public class App {
         ActorRef cacheActor = system.actorOf(Props.create(CacheActor.class));
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
-        final Flow<HttpRequest, HttpResponse>
+        final Flow<HttpRequest, HttpResponse, NotUsed>
     }
 }
