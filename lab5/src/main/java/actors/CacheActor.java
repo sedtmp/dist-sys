@@ -1,2 +1,4 @@
-package actors;public class CacheActor {
+package actors;
+
+public class CacheActor {
 }
