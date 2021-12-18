@@ -9,6 +9,7 @@ import akka.pattern.Patterns;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
 import akka.japi.Pair;
+import akka.stream.javadsl.Keep;
 import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
 import messages.GetMessage;
@@ -71,7 +72,7 @@ public class FlowCreator {
                         return Source
                                 .single(req)
                                 .via(flow)
-                                .toMat(Sink.fold((int) 0, Integer::sum))
+                                .toMat(Sink.fold((int) 0, Integer::sum), Keep)
                     });
                 })
                 .map(req -> {})
