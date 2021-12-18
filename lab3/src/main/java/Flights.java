@@ -11,11 +11,11 @@ public class Flights implements Serializable {
     public Flights() {}
 
     public Flights (
-            float delayMaxTime,
+            float maxArrDelay,
             float cancelledFlights,
             int flightsCount,
             int delaysCount) {
-        this.delayMaxTime = delayMaxTime;
+        this.maxArrDelay = maxArrDelay;
         this.cancelledCount = cancelledCount;
         this.flightsCount = flightsCount;
         this.delaysCount = delaysCount;
@@ -41,7 +41,7 @@ public class Flights implements Serializable {
         return new Flights(
                 flights.getFlightsCount() + 1,
                 isDelayed ? flights.getDelaysCount() + 1 : flights.getDelaysCount(),
-                Math.max(flights.getMaxArrDelay())
+                Math.max(flights.getMaxArrDelay(), )
         );
     }
 
