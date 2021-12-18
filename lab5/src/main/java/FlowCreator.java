@@ -11,7 +11,7 @@ public class FlowCreator {
     private static final String TEST_URL = "testUrl";
     private static final String COUNT = "count";
     private static final int MAP_ASYNC = 1;
-    private static final int 
+    private static final int TIME_OUT
 
 
     private final Http http;
