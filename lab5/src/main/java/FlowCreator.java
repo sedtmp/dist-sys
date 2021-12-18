@@ -9,6 +9,7 @@ import akka.pattern.Patterns;
 import akka.stream.Materializer;
 import akka.stream.javadsl.Flow;
 import akka.japi.Pair;
+import akka.stream.javadsl.Source;
 import messages.GetMessage;
 
 import java.time.Duration;
@@ -66,7 +67,7 @@ public class FlowCreator {
                                     long finish = System.currentTimeMillis();
                                     return CompletableFuture.completedFuture((int) (finish - start));
                                 });
-                        
+                        return Source
                     });
                 })
                 .map(req -> {})
