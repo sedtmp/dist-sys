@@ -43,7 +43,7 @@ public class Flights implements Serializable {
         }
     }
 
-    public void mergeAll(Flights data) {
+    public static  mergeAll(Flights data) {
         if (data.getDelayMaxTime() > delayMaxTime) {
             delayMaxTime = data.getDelayMaxTime();
         }
