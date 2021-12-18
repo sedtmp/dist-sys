@@ -13,7 +13,7 @@ public class App {
     }
 
     private static float checkNull(String value) {
-        if 
+        if (value.)
     }
 
     public static void main(String[] args) {
