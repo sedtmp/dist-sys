@@ -1,6 +1,7 @@
 package actors;
 
 import akka.actor.AbstractActor;
+import messages.StoreMessage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,6 @@ public class StoreActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match()
+                .match(StoreMessage)
     }
 }
