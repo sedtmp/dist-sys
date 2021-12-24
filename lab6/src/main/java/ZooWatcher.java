@@ -16,7 +16,7 @@ public class ZooWatcher implements Watcher {
         this.storage = storage;
     }
 
-    
+    private static String
 
     private void sendServers() throws InterruptedException, KeeperException {
         List<String> servers = new ArrayList<>();
