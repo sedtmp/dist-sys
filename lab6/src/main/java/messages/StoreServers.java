@@ -2,10 +2,10 @@ package messages;
 
 import java.util.List;
 
-public class StoreMessage {
+public class StoreServers {
     private List<String> servers;
 
-    public StoreMessage(List<String> servers) {
+    public StoreServers(List<String> servers) {
         this.servers = servers;
     }
 

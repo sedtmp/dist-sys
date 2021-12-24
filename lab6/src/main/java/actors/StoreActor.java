@@ -2,8 +2,8 @@ package actors;
 
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
-import messages.GetMessage;
-import messages.StoreMessage;
+import messages.GetServerList;
+import messages.StoreServers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +16,8 @@ public class StoreActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(StoreMessage.class, msg -> this.servers = msg.getServers())
-                .match(GetMessage.class, msg -> getSender().tell(this.getRandomServer(), ActorRef.noSender()))
+                .match(StoreServers.class, msg -> this.servers = msg.getServers())
+                .match(GetServerList.class, msg -> getSender().tell(this.getRandomServer(), ActorRef.noSender()))
                 .build();
     }
 
