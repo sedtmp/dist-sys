@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class StoreActor extends AbstractActor {
-    private List<String> servers;
+    private List<String> servers = new ;
     private Random random = new Random();
 
     @Override
