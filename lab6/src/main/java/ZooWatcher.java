@@ -18,6 +18,6 @@ public class ZooWatcher implements Watcher {
 
     private void sendServers() {
         List<String> servers = new ArrayList<>();
-        for (String server : zoo.getChildren(Constants.SERVERS_PATH))
+        for (String server : zoo.getChildren(Constants.SERVERS_PATH, this))
     }
 }
