@@ -9,5 +9,5 @@ public class StoreMessage {
         this.servers = servers;
     }
 
-    public 
+    public List<String> get
 }
