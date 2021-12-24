@@ -9,5 +9,7 @@ public class StoreMessage {
         this.servers = servers;
     }
 
-    public List<String> get
+    public List<String> getServers() {
+        return servers;
+    }
 }
