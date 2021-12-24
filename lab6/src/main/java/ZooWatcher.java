@@ -1,4 +1,5 @@
 import akka.actor.ActorRef;
+import constants.Constants;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
@@ -17,6 +18,6 @@ public class ZooWatcher implements Watcher {
 
     private void sendServers() {
         List<String> servers = new ArrayList<>();
-        for (String server : zoo.getChildren())
+        for (String server : zoo.getChildren(Constants.SERVERS_PATH))
     }
 }
