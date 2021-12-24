@@ -1,5 +1,8 @@
 package messages;
 
+import java.util.List;
+
 public class StoreMessage {
-    private List
+    private List<String> servers;
+    
 }
