@@ -1,3 +1,5 @@
+import org.apache.zookeeper.ZooKeeper;
+
 public class ZooWatcher {
-    private 
+    private ZooKeeper
 }
