@@ -1,5 +1,5 @@
 package constants;
 
 public class Constants {
-    public static final String 
+    public static final String SERVERS_PATH = ""
 }
