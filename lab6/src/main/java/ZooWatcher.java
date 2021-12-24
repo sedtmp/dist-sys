@@ -12,5 +12,5 @@ public class ZooWatcher implements Watcher {
         this.storage = storage;
     }
 
-    
+    private
 }
