@@ -20,6 +20,6 @@ public class StoreActor extends AbstractActor {
     }
 
     private String getRandomServer() {
-        return servers.get()
+        return servers.get(random)
     }
 }
