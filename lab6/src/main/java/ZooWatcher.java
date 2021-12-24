@@ -15,6 +15,6 @@ public class ZooWatcher implements Watcher {
     }
 
     private void sendServers() {
-        List<String> 
+        List<String> servers 
     }
 }
