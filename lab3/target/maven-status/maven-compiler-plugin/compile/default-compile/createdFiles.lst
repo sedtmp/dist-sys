@@ -1,3 +1,4 @@
-FlightData.class
 App.class
-FlightsSerializable.class
+Flights.class
+FlightData.class
+Constants.class

@@ -4,7 +4,7 @@ public class Flights implements Serializable {
     private static final String OUTPUT_FORMAT = "MaxDelay: %d; Percent of delays: %d; Percent of cancelled: %d";
 
     private float maxArrDelay;
-    private float cancelledCount;
+    private int cancelledCount;
     private int flightsCount;
     private int delaysCount;
 
@@ -12,7 +12,7 @@ public class Flights implements Serializable {
 
     public Flights (
             float maxArrDelay,
-            float cancelledFlights,
+            int cancelledCount,
             int flightsCount,
             int delaysCount) {
         this.maxArrDelay = maxArrDelay;
@@ -25,7 +25,7 @@ public class Flights implements Serializable {
         return maxArrDelay;
     }
 
-    public float getCancelledCount() {
+    public int getCancelledCount() {
         return cancelledCount;
     }
 
@@ -37,20 +37,22 @@ public class Flights implements Serializable {
         return delaysCount;
     }
 
-    public static Flights merge(Flights flights, float maxArrDelay, boolean isDelayed, boolean isCancelled) {
+    public static Flights mergeValue(Flights flights, float maxArrDelay, boolean isDelayed, boolean isCancelled) {
         return new Flights(
+                Math.max((float) flights.getMaxArrDelay(), (float) maxArrDelay),
+                isCancelled ? flights.getCancelledCount() + 1 : flights.getCancelledCount(),
                 flights.getFlightsCount() + 1,
-                isDelayed ? flights.getDelaysCount() + 1 : flights.getDelaysCount(),
-                Math.max(flights.getMaxArrDelay(), )
+                isDelayed ? flights.getDelaysCount() + 1 : flights.getDelaysCount()
         );
     }
 
-    public static Flights mergeAll(Flights data) {
-        if (data.getDelayMaxTime() > delayMaxTime) {
-            delayMaxTime = data.getDelayMaxTime();
-        }
-        flightsCount += data.getFlightsCount();
-        cancelledCount += data.getCancelledCount();
+    public static Flights merge(Flights flights, Flights otherFlights) {
+        return new Flights(
+                Math.max(flights.getMaxArrDelay(), otherFlights.getMaxArrDelay()),
+                flights.getCancelledCount() + otherFlights.getCancelledCount(),
+                flights.getFlightsCount() + otherFlights.getCancelledCount(),
+                flights.getDelaysCount() + otherFlights.getDelaysCount()
+        );
     }
 
     public float calcCancelledPercent() {
@@ -64,6 +66,6 @@ public class Flights implements Serializable {
     public String toOutputString() {
         float cancelledPercent = calcCancelledPercent();
         float delaysPercent = calcDelaysPercent();
-        return String.format(OUTPUT_FORMAT, delayMaxTime, delaysPercent, cancelledPercent);
+        return String.format(OUTPUT_FORMAT, maxArrDelay, delaysPercent, cancelledPercent);
     }
 }
