@@ -8,6 +8,7 @@ public class ZooWatcher implements Watcher {
     private ActorRef storage;
 
     public ZooWatcher(ZooKeeper zoo, ActorRef storage) {
-        this.zoo = 
+        this.zoo = zoo;
+        
     }
 }
