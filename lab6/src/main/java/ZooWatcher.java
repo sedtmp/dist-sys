@@ -5,5 +5,5 @@ public class ZooWatcher {
     private ZooKeeper zoo;
     private ActorRef storage;
 
-    
+    public ZooWatcher
 }
