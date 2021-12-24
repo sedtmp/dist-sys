@@ -1,2 +1,4 @@
-package actors;public class StoreActor {
+package actors;
+
+public class StoreActor {
 }
