@@ -19,5 +19,7 @@ public class StoreActor extends AbstractActor {
                 .match(GetMessage.class, msg)
     }
 
-    private String getRandomServer
+    private String getRandomServer() {
+        
+    }
 }
