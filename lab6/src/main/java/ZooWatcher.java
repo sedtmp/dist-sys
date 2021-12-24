@@ -1,7 +1,7 @@
 import akka.actor.ActorRef;
 import org.apache.zookeeper.ZooKeeper;
 
-public class ZooWatcher {
+public class ZooWatcher implements ZooW {
     private ZooKeeper zoo;
     private ActorRef storage;
 
