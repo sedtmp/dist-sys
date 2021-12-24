@@ -83,6 +83,5 @@
             <artifactId>zookeeper</artifactId>
             <version>3.5.5</version>
         </dependency>
-
     </dependencies>
 </project>
