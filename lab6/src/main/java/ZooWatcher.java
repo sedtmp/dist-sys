@@ -6,5 +6,5 @@ public class ZooWatcher implements Watcher {
     private ZooKeeper zoo;
     private ActorRef storage;
 
-    public ZooWatcher(ZooKeeper zoo, ActorRef storage)
+    public ZooWatcher(ZooKeeper zoo, ActorRef storage) throws 
 }
