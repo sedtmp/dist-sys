@@ -8,4 +8,6 @@ public class StoreMessage {
     public StoreMessage(List<String> servers) {
         this.servers = servers;
     }
+
+    
 }
