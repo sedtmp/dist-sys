@@ -1,6 +1,7 @@
 package actors;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import messages.GetMessage;
 import messages.StoreMessage;
 
@@ -16,7 +17,7 @@ public class StoreActor extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .match(StoreMessage.class, msg -> this.servers = msg.getServers())
-                .match(GetMessage.class, msg -> getSender().tell(this.getRandomServer()), )
+                .match(GetMessage.class, msg -> getSender().tell(this.getRandomServer()), ActorRef)
     }
 
     private String getRandomServer() {
