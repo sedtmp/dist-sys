@@ -3,6 +3,7 @@ import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ZooWatcher implements Watcher {
@@ -15,6 +16,7 @@ public class ZooWatcher implements Watcher {
     }
 
     private void sendServers() {
-        List<String> servers 
+        List<String> servers = new ArrayList<>();
+        
     }
 }
