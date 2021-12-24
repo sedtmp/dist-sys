@@ -1,6 +1,7 @@
 package actors;
 
 import akka.actor.AbstractActor;
+import messages.GetMessage;
 import messages.StoreMessage;
 
 import java.util.ArrayList;
@@ -15,6 +16,6 @@ public class StoreActor extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .match(StoreMessage.class, msg -> this.servers = msg.getServers())
-                .match()
+                .match(GetMessage)
     }
 }
