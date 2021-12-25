@@ -63,7 +63,7 @@ public class App {
         System.out.println(serversInfo + "\nPress RETURN to stop...");
         try {
             System.in.read();
-        } catch (IOException) {
+        } catch (IOException exception) {
             
         }
     }
