@@ -35,7 +35,9 @@ public class Server implements Watcher {
             route(get(() -> {
                 parameter("url", (url) -> {
                     parameter("count", (count) -> {
-                        if ()
+                        if (Constants.isZeroCount(count)) {
+                            
+                        }
                     })
                 })
             }))
