@@ -56,28 +56,6 @@ public class Server implements Watcher {
     }
 
     public Route createRoute() {
-        return route(path(Constants.EMPTY_STRING, () -> {
-            route(get(() -> {
-                parameter("url", (url) -> {
-                    parameter("count", (count) -> {
-                        if (Constants.isZeroCount(count)) {
-                            return completeWithFuture(http.singleRequest(HttpRequest.create(url)));
-                        } else {
-                            return completeWithFuture(Patterns
-                                    .ask(actorConfig, new GetServer(), Duration.ofMillis(5000))
-                                    .thenCompose(port -> {
-                                        http.singleRequest(HttpRequest.create(String.format(
-                                                "http://%s/?url=%s&count=%d",
-                                                port,
-                                                url,
-                                                Integer.parseInt(count) - 1
-                                        )));
-                                    })
-                            );
-                        }
-                    })
-                })
-            }))
-        }))
+        return 
     }
 }
