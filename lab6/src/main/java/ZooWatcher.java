@@ -2,6 +2,7 @@ import akka.actor.ActorRef;
 import constants.Constants;
 import messages.StoreServers;
 import org.apache.zookeeper.KeeperException;
+import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
@@ -28,5 +29,5 @@ public class ZooWatcher implements Watcher {
     }
 
     @Override
-    public void process()
+    public void process(WatchedEvent)
 }
