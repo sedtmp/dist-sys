@@ -28,7 +28,7 @@ public class Server implements Watcher {
         this.zoo = zoo;
         this.path = Constants.createServerPath(port);
         zoo.create(
-                Constants.createNodePath(path),
+                Constants.createNodePath(port),
                 path.getBytes(),
                 ZooDefs.Ids.OPEN_ACL_UNSAFE,
                 CreateMode.EPHEMERAL

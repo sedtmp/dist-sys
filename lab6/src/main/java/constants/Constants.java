@@ -12,8 +12,8 @@ public class Constants {
         return String.format("%s:%s", HOST, port);
     }
 
-    public static String createNodePath(String serverPath) {
-        return String.format("%s/%s:%s", SERVERS_PATH, serverPath);
+    public static String createNodePath(String port) {
+        return String.format("%s/%s:%s", SERVERS_PATH, HOST, port);
     }
 
     public static boolean isZero(int value) {
