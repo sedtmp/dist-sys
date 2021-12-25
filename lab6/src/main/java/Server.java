@@ -37,7 +37,7 @@ public class Server implements Watcher {
 
     private static Route check(ActorRef actorConfig, Http http, Request request) {
         if (request.hasZeroCount()) {
-            return completeWithFuture(http.singleRequest(HttpRequest.create(url)));
+            return completeWithFuture(http.singleRequest(HttpRequest.create(request.getUrl())));
         }
     }
 
