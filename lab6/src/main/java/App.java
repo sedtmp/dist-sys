@@ -51,7 +51,6 @@ public class App {
                         ConnectHttp.toHost(Constants.HOST, Integer.parseInt(args[i])),
                         materializer
                 ));
-                
             }
         }
 
