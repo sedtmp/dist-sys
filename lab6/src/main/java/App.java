@@ -12,7 +12,7 @@ import org.apache.zookeeper.ZooKeeper;
 import java.io.IOException;
 
 public class App {
-    public static void main(String[] args) throws  {
+    public static void main(String[] args) throws IOException {
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
         ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
