@@ -1,5 +1,5 @@
 package messages;
 
-public class GetServerList {
-    public GetServerList() {}
+public class GetServer {
+    public GetServer() {}
 }
