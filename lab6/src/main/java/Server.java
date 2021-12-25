@@ -45,7 +45,9 @@ public class Server implements Watcher {
                         } else {
                             return completeWithFuture(Patterns
                                     .ask(actorConfig, new GetServer(), Duration.ofMillis(5000))
-                                    .thenCompose(port -> )
+                                    .thenCompose(port -> {
+                                        
+                                    })
                             );
                         }
                     })
