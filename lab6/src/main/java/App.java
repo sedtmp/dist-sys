@@ -9,6 +9,8 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
 
+import java.io.IOException;
+
 public class App {
     public static void main(String[] args) {
         BasicConfigurator.configure();
@@ -21,8 +23,8 @@ public class App {
         try {
             zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX], Constants.ZOOKEEPER_TIMEOUT, null);
             new ZooWatcher(zoo, storage);
-        } catch (KeeperException | InterruptedException exception) {
-            
+        } catch (KeeperException | InterruptedException | IOException exception) {
+
         }
 
     }
