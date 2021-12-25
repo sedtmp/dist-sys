@@ -15,6 +15,10 @@ public class Request {
         return count;
     }
 
+    public boolean hasZeroCount() {
+        return count == 0;
+    }
+
     public void decrementCount() {
         count--;
     }
