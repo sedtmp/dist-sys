@@ -4,6 +4,7 @@ import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.ServerBinding;
+import akka.http.javadsl.model.HttpRequest;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import constants.Constants;
@@ -38,7 +39,7 @@ public class App {
         for (int i = 1; i < args.length; i++) {
             try {
                 Server server = new Server(http, storage, zoo, args[i]);
-                final Flow
+                final Flow<HttpRequest>
             }
         }
 
