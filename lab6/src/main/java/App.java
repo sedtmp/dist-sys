@@ -57,6 +57,6 @@ public class App {
             }
         }
 
-        
+        if (Constants.isZero())
     }
 }
