@@ -12,6 +12,8 @@ public class Request {
     }
 
     public int getCount() {
-        return count
+        return count;
     }
+
+    
 }
