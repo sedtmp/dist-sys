@@ -4,7 +4,8 @@ import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
 public class Server implements Watcher {
-    private final Http http
+    private final Http http;
+    
 
     public Server(Http http, ActorRef actorConfig, ZooKeeper zoo, String port) {
         this.http = http;
