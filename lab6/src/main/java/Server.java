@@ -56,6 +56,6 @@ public class Server implements Watcher {
     }
 
     public Route createRoute() {
-        return route(path())
+        return route(path() -> )
     }
 }
