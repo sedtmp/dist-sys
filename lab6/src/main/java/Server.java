@@ -7,6 +7,8 @@ import constants.Constants;
 import messages.GetServer;
 import org.apache.zookeeper.*;
 
+import java.time.Duration;
+
 import static akka.http.javadsl.server.Directives.*;
 
 public class Server implements Watcher {
@@ -42,7 +44,8 @@ public class Server implements Watcher {
                             return completeWithFuture(http.singleRequest(HttpRequest.create(url)));
                         } else {
                             return completeWithFuture(Patterns
-                                    .ask(actorConfig, new GetServer(), D)
+                                    .ask(actorConfig, new GetServer(), Duration.ofMillis(5000))
+                                    .
                             );
                         }
                     })
