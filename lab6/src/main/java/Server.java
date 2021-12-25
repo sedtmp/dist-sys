@@ -60,8 +60,8 @@ public class Server implements Watcher {
             parameter("url", url ->
                     parameter("count", count ->
                             check(actorConfig, http, new Request(url, count))
-                            )
                     )
+            )
         );
     }
 }
