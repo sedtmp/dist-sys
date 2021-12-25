@@ -34,7 +34,9 @@ public class Server implements Watcher {
         return route(path(Constants.EMPTY_STRING, () -> {
             route(get(() -> {
                 parameter("url", (url) -> {
-                    parameter("count", )
+                    parameter("count", (count) -> {
+                        
+                    })
                 })
             }))
         }))
