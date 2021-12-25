@@ -16,8 +16,6 @@ public class ZooWatcher implements Watcher {
         this.storage = storage;
     }
 
-    private String 
-
     private void sendServers() throws InterruptedException, KeeperException {
         List<String> servers = new ArrayList<>();
         for (String server : zoo.getChildren(Constants.SERVERS_PATH, this)) {
