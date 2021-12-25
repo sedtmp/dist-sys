@@ -32,7 +32,11 @@ public class ZooWatcher implements Watcher {
     public void process(WatchedEvent event) {
         try {
             zoo.getChildren(Constants.SERVERS_PATH, this);
-            
+
+        } catch (InterruptedException e |) {
+            e.printStackTrace();
+        } catch (KeeperException e) {
+            e.printStackTrace();
         }
     }
 }
