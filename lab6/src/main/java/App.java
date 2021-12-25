@@ -57,6 +57,8 @@ public class App {
             }
         }
 
-        if (Constants.isZero())
+        if (Constants.isZero(bindings.size())) {
+            
+        }
     }
 }
