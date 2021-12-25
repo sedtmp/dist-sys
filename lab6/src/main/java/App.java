@@ -10,7 +10,7 @@ import org.apache.zookeeper.ZooKeeper;
 public class App {
     public static void main(String[] args) {
         if (args.length < 2) {
-            System.out.println();
+            System.out.println("Usage");
         }
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
