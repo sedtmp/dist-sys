@@ -33,7 +33,7 @@ public class App {
         }
 
         List<CompletionStage<ServerBinding>> bindings = new ArrayList<>();
-        StringBuilder serversInfo = new StringBuilder("Servers")
+        StringBuilder serversInfo = new StringBuilder("Servers online at")
 
     }
 }
