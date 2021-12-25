@@ -37,6 +37,7 @@ public class App {
         for (int i = 1; i < args.length; i++) {
             try {
                 Server server = new Server(http, storage, zoo, args[i]);
+                final 
             }
         }
 
