@@ -14,5 +14,7 @@ public class Constants {
         return String.format("/%s%s", SERVERS_PATH, serverPath);
     }
 
-    public static boolean isZeroCount(String )
+    public static boolean isZeroCount(String count) {
+        return count.equals("0");
+    }
 }
