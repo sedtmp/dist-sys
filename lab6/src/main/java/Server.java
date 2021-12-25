@@ -36,7 +36,9 @@ public class Server implements Watcher {
     }
 
     private static Route check(ActorRef actorConfig, Http http, Request request) {
-        if (request.hasZeroCount())
+        if (request.hasZeroCount()) {
+            
+        }
     }
 
     public Route createRoute() {
