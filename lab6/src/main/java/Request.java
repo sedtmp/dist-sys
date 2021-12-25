@@ -19,7 +19,7 @@ public class Request {
         return count == 0;
     }
 
-    public void decrementCount() {
+    public void decreaceCount() {
         count--;
     }
 }
