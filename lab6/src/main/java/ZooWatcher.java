@@ -16,7 +16,6 @@ public class ZooWatcher implements Watcher {
     public ZooWatcher(ZooKeeper zoo, ActorRef storage) throws InterruptedException, KeeperException {
         this.zoo = zoo;
         this.storage = storage;
-
         sendServers();
     }
 
@@ -32,7 +31,7 @@ public class ZooWatcher implements Watcher {
     public void process(WatchedEvent event) {
         try {
             zoo.getChildren(Constants.SERVERS_PATH, this);
-            
+            sendServers();
         } catch (InterruptedException | KeeperException exception) {
             exception.printStackTrace();
         }
