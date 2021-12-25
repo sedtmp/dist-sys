@@ -61,6 +61,7 @@ public class App {
             System.out.println("ZERO SERVERS RUNNING");
         }
 
-        System.out.println(serversInfo + "\nPress RETURN ");
+        System.out.println(serversInfo + "\nPress RETURN to stop...");
+        
     }
 }
