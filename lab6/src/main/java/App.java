@@ -64,7 +64,7 @@ public class App {
         try {
             System.in.read();
         } catch (IOException exception) {
-            
+            exception
         }
     }
 }
