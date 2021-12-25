@@ -1,3 +1,4 @@
+import actors.StoreActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
@@ -7,6 +8,6 @@ public class App {
     public static void main(String[] args) {
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
-        ActorRef storage = actorSystem.actorOf(Props.create(Sto))
+        ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
     }
 }
