@@ -25,9 +25,6 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         BasicConfigurator.configure();
-
-
-        
         ActorSystem actorSystem = ActorSystem.create("routes");
         ActorRef actoreStorage = actorSystem.actorOf(Props.create(StoreActor.class));
         final ActorMaterializer materializer = ActorMaterializer.create(actorSystem);
