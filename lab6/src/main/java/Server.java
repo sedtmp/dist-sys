@@ -40,7 +40,9 @@ public class Server implements Watcher {
             return completeWithFuture(http.singleRequest(HttpRequest.create(request.getUrl())));
         } else {
             request.decrementCount();
-            return completeWithFuture(Patterns);
+            return completeWithFuture(Patterns
+                    .ask()
+            );
         }
     }
 
