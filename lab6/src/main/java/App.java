@@ -45,7 +45,7 @@ public class App {
                         actorSystem,
                         materializer
                 );
-                
+                bindings.add()
             }
         }
 
