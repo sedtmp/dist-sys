@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e46cb6-bcf7-45ed-926e-7e745b4aee4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/src/main/java/FlowCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/main/java/FlowCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/src/main/java/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/main/java/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/src/main/java/messages/StoreMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/main/java/messages/StoreMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZooWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZooWatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/Constants.java" afterDir="false" />
-    </list>
+    <list default="true" id="06e46cb6-bcf7-45ed-926e-7e745b4aee4c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +47,7 @@
   </component>
   <component name="RunManager" selected="Application.App2">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <output_file path="AppLogs.txt" is_save="true" />
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="lab6" />
       <option name="PROGRAM_PARAMETERS" value="localhost:2181 8010" />
@@ -66,6 +56,7 @@
       </method>
     </configuration>
     <configuration name="App2" type="Application" factoryName="Application">
+      <output_file path="App2Logs" is_save="true" />
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="lab6" />
       <option name="PROGRAM_PARAMETERS" value="localhost:2181 8015" />
