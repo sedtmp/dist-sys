@@ -14,7 +14,8 @@ public class App {
         ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
         final ActorMaterializer materializer = ActorMaterializer.create(actorSystem);
         final Http http = Http.get(actorSystem);
-        ZooKeeper zoo = null;
         
+        ZooKeeper zoo = null;
+
     }
 }
