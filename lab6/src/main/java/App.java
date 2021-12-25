@@ -1,4 +1,5 @@
 import actors.StoreActor;
+import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
@@ -40,7 +41,7 @@ public class App {
         for (int i = 1; i < args.length; i++) {
             try {
                 Server server = new Server(http, storage, zoo, args[i]);
-                final Flow<HttpRequest, HttpResponse>
+                final Flow<HttpRequest, HttpResponse, NotUsed>
             }
         }
 
