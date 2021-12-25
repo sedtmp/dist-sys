@@ -50,7 +50,7 @@ public class Server implements Watcher {
                                                 "http://%s/?url=%s&count=%d",
                                                 port,
                                                 url,
-                                                Integer
+                                                Integer.parseInt()
                                         )));
                                     })
                             );
