@@ -39,6 +39,7 @@ public class Server implements Watcher {
         if (request.hasZeroCount()) {
             return completeWithFuture(http.singleRequest(HttpRequest.create(request.getUrl())));
         } else {
+            request.decrementCount();
             
         }
     }
