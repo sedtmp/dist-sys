@@ -41,7 +41,7 @@ public class Server implements Watcher {
                             return completeWithFuture(http.singleRequest(HttpRequest.create(url)));
                         } else {
                             return completeWithFuture(Patterns
-                                    .ask()
+                                    .ask(actorConfig)
                             );
                         }
                     })
