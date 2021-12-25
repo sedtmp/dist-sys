@@ -13,15 +13,15 @@ public class StoreActor extends AbstractActor {
     private List<String> servers = new ArrayList<>();
     private Random random = new Random();
 
+    private String getRandomServer() {
+        return servers.get(random.nextInt(servers.size()));
+    }
+
     @Override
     public Receive createReceive() {
         return receiveBuilder()
                 .match(StoreServers.class, msg -> this.servers = msg.getServers())
                 .match(GetServer.class, msg -> getSender().tell(this.getRandomServer(), ActorRef.noSender()))
                 .build();
-    }
-
-    private String getRandomServer() {
-        return servers.get(random.nextInt(servers.size()));
     }
 }
