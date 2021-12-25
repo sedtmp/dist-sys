@@ -31,6 +31,6 @@ public class Server implements Watcher {
     }
 
     public Route createRoute() {
-        return route(path(Constants.EMPTY_STRING, ))
+        return route(path(Constants.EMPTY_STRING, () - ))
     }
 }
