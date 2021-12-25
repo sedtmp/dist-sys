@@ -35,7 +35,7 @@ public class Server implements Watcher {
         );
     }
 
-    private 
+    private static Route check()
 
     public Route createRoute() {
         return route(path(Constants.EMPTY_STRING, () -> {
