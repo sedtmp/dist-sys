@@ -16,7 +16,7 @@ public class App {
         final Http http = Http.get(actorSystem);
 
         ZooKeeper zoo = null;
-        
+        try 
 
     }
 }
