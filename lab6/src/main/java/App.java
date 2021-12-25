@@ -48,7 +48,7 @@ public class App {
                 );
                 bindings.add(http.bindAndHandle(
                         routeFlow,
-                        ConnectHttp
+                        ConnectHttp.toHost()
                 ));
             }
         }
