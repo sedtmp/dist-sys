@@ -18,7 +18,7 @@ public class Server implements Watcher {
         zoo.create(
                 Constants.createServerPath(path),
                 path.getBytes(),
-                
+                Zoo
         );
     }
 
