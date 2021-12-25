@@ -4,6 +4,7 @@ import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.Http;
 import akka.stream.ActorMaterializer;
+import constants.Constants;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.zookeeper.ZooKeeper;
 
@@ -17,7 +18,7 @@ public class App {
 
         ZooKeeper zoo = null;
         try {
-            zoo = new ZooKeeper(args)
+            zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX])
         }
 
     }
