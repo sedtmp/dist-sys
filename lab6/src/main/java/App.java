@@ -62,7 +62,7 @@ public class App {
         }
         System.out.println(serversInfo + "\nPress RETURN to stop...");
         try {
-            System.
+            System.in.read()
         }
     }
 }
