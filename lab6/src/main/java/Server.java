@@ -1,5 +1,6 @@
 import akka.actor.ActorRef;
 import akka.http.javadsl.Http;
+import akka.http.javadsl.server.Route;
 import constants.Constants;
 import org.apache.zookeeper.*;
 
@@ -26,5 +27,6 @@ public class Server implements Watcher {
                 CreateMode.EPHEMERAL
         );
     }
-    
+
+    public Route
 }
