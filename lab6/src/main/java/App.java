@@ -25,6 +25,7 @@ public class App {
             new ZooWatcher(zoo, storage);
         } catch (KeeperException | InterruptedException exception) {
             exception.printStackTrace();
+            System.exit(-1);
         }
 
     }
