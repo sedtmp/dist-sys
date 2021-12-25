@@ -45,6 +45,7 @@
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="lab6" />
+      <option name="PROGRAM_PARAMETERS" value="localhost:2181 8000" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
