@@ -7,5 +7,7 @@ public class Request {
         this.count = Integer.parseInt(count);
     }
 
-    public String getUrl()
+    public String getUrl() {
+        
+    }
 }
