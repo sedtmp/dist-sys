@@ -45,7 +45,9 @@ public class App {
                         actorSystem,
                         materializer
                 );
-                bindings.add(http.bindAndHandle())
+                bindings.add(http.bindAndHandle(
+                        
+                ));
             }
         }
 
