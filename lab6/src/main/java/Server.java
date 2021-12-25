@@ -17,7 +17,8 @@ public class Server implements Watcher {
         this.path = Constants.createServerPath(port);
         zoo.create(
                 Constants.createServerPath(path),
-                path.ge
+                path.getBytes(),
+                
         );
     }
 
