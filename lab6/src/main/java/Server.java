@@ -41,7 +41,7 @@ public class Server implements Watcher {
         } else {
             request.decrementCount();
             return completeWithFuture(Patterns
-                    .ask(actorConfig, new GetServer())
+                    .ask(actorConfig, new GetServer(), )
             );
         }
     }
