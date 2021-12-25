@@ -11,5 +11,7 @@ public class Request {
         return url;
     }
 
-    public int getCount()
+    public int getCount() {
+        
+    }
 }
