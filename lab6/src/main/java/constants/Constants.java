@@ -13,7 +13,7 @@ public class Constants {
     }
 
     public static String createNodePath(String serverPath) {
-        return String.format("%s%s", SERVERS_PATH, createServerPath());
+        return String.format("%s/%s", SERVERS_PATH, HOST);
     }
 
     public static boolean isZero(int value) {
