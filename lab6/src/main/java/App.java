@@ -48,7 +48,8 @@ public class App {
                 );
                 bindings.add(http.bindAndHandle(
                         routeFlow,
-                        ConnectHttp.toHost(Constants.HOST, Integer.parseInt())
+                        ConnectHttp.toHost(Constants.HOST, Integer.parseInt(args[i])),
+                        
                 ));
             }
         }
