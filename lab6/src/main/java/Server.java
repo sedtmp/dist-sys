@@ -35,7 +35,7 @@ public class Server implements Watcher {
         );
     }
 
-    private static Route check()
+    private static Route check(ActorRef actorConfig, )
 
     public Route createRoute() {
         return route(path(Constants.EMPTY_STRING, () -> {
