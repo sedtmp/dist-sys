@@ -30,7 +30,7 @@ public class App {
 
         ZooKeeper zoo = null;
         try {
-            zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX], Constants.ZOOKEEPER_TIMEOUT, null);
+            zoo = new ZooKeeper("127.0.0.1:2181", Constants.ZOOKEEPER_TIMEOUT, null);
             new ZooWatcher(zoo, storage);
         } catch (KeeperException | InterruptedException exception) {
             exception.printStackTrace();
