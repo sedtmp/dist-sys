@@ -36,7 +36,7 @@ public class Server implements Watcher {
                 parameter("url", (url) -> {
                     parameter("count", (count) -> {
                         if (Constants.isZeroCount(count)) {
-                            return 
+                            return completeWithFuture()
                         }
                     })
                 })
