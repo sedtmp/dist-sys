@@ -39,7 +39,7 @@ public class Server implements Watcher {
                         if (Constants.isZeroCount(count)) {
                             return completeWithFuture(http.singleRequest(HttpRequest.create(url)));
                         } else {
-                            
+                            return
                         }
                     })
                 })
