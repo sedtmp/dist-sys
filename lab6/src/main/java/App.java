@@ -58,7 +58,8 @@ public class App {
         }
 
         if (Constants.isZero(bindings.size())) {
-            
+            System.out.println("ZERO SERVERS RUNNING");
         }
+        
     }
 }
