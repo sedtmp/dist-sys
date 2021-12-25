@@ -69,6 +69,6 @@ public class Server implements Watcher {
     public void process(WatchedEvent event) {
         try {
             zoo.getData(path, this, null);
-        } catch ()
+        } catch (KeeperException | )
     }
 }
