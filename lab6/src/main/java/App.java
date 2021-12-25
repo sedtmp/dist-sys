@@ -19,7 +19,7 @@ public class App {
         ZooKeeper zoo = null;
         try {
             zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX], Constants.ZOOKEEPER_TIMEOUT, null);
-            new ZooWatcher()
+            new ZooWatcher(zoo, )
         }
 
     }
