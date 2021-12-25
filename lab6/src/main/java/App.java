@@ -6,6 +6,7 @@ import akka.http.javadsl.Http;
 import akka.stream.ActorMaterializer;
 import constants.Constants;
 import org.apache.log4j.BasicConfigurator;
+import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
 
 public class App {
@@ -20,7 +21,7 @@ public class App {
         try {
             zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX], Constants.ZOOKEEPER_TIMEOUT, null);
             new ZooWatcher(zoo, storage);
-        } catch ()
+        } catch (KeeperException | InterruptedException)
 
     }
 }
