@@ -11,6 +11,7 @@ import org.apache.zookeeper.ZooKeeper;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.CompletionStage;
 
 public class App {
     public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
@@ -29,7 +30,7 @@ public class App {
             System.exit(-1);
         }
 
-        List
+        List<CompletionStage>
 
     }
 }
