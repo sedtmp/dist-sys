@@ -22,6 +22,6 @@ public class ZooWatcher implements Watcher {
         for (String server : zoo.getChildren(Constants.SERVERS_PATH, this)) {
             servers.add(new String(zoo.getData(String.format(Constants.SERVER_PATH_PATTERN, server), false, null)));
         }
-        storage.tell(new StoreServers());
+        storage.tell(new StoreServers(servers), );
     }
 }
