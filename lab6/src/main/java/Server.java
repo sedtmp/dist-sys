@@ -43,13 +43,13 @@ public class Server implements Watcher {
             return completeWithFuture(Patterns
                     .ask(actorConfig, new GetServer(), Duration.ofMillis(5000))
                     .thenCompose(req -> {
-                        String singleRequestUrl = 
-                        return http.singleRequest(HttpRequest.create(String.format(
+                        String singleRequestUrl = String.format(
                                 "http://%s/?url=%s&count=%d",
                                 req,
                                 request.getUrl(),
                                 request.getCount()
-                        )));
+                        );
+                        return http.singleRequest(HttpRequest.create(singleRequestUrl));
                     })
             );
         }
