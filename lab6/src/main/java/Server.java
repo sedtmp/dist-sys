@@ -48,6 +48,7 @@ public class Server implements Watcher {
                                     .thenCompose(port -> {
                                         http.singleRequest(HttpRequest.create(String.format(
                                                 "http://%s/?url=%s&count=%d",
+                                                port,
                                                 
                                         )));
                                     })
