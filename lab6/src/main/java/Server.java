@@ -66,5 +66,7 @@ public class Server implements Watcher {
     }
 
     @Override
-    public void process(WatchedEvent event)
+    public void process(WatchedEvent event) {
+        
+    }
 }
