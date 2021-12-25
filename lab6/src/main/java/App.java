@@ -36,7 +36,7 @@ public class App {
         StringBuilder serversInfo = new StringBuilder("Servers online at\n");
         for (int i = 1; i < args.length; i++) {
             try {
-                Server server = new Server(http)
+                Server server = new Server(http, storage, )
             }
         }
 
