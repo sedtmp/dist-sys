@@ -49,6 +49,7 @@ public class Server implements Watcher {
                                         http.singleRequest(HttpRequest.create(String.format(
                                                 "http://%s/?url=%s&count=%d",
                                                 port,
+                                                url,
                                                 
                                         )));
                                     })
