@@ -2,5 +2,7 @@ public class Request {
     private String url;
     private int count;
 
-    public Request(String url)
+    public Request(String url, String count) {
+        
+    }
 }
