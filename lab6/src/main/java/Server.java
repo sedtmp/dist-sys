@@ -56,12 +56,12 @@ public class Server implements Watcher {
     }
 
     public Route createRoute() {
-        return route(path() ->
-            parameter("url", url ->
-                    parameter("count", count ->
-                            check(actorConfig, http, new Request(url, count))
+        return route(path(() ->
+                parameter("url", url ->
+                        parameter("count", count ->
+                                check(actorConfig, http, new Request(url, count))
                     )
             )
-        );
+        ));
     }
 }
