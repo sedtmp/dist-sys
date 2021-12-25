@@ -24,7 +24,7 @@ public class App {
             zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX], Constants.ZOOKEEPER_TIMEOUT, null);
             new ZooWatcher(zoo, storage);
         } catch (KeeperException | InterruptedException exception) {
-            
+            exception.printStackTrace();
         }
 
     }
