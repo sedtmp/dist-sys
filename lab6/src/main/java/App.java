@@ -6,6 +6,6 @@ public class App {
     public static void main(String[] args) {
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
-        ActorRef
+        ActorRef storage
     }
 }
