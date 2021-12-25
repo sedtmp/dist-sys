@@ -1,5 +1,6 @@
 import akka.actor.ActorRef;
 import constants.Constants;
+import messages.StoreServers;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
@@ -21,6 +22,6 @@ public class ZooWatcher implements Watcher {
         for (String server : zoo.getChildren(Constants.SERVERS_PATH, this)) {
             servers.add(new String(zoo.getData(String.format(Constants.SERVER_PATH_PATTERN, server), false, null)));
         }
-        storage.tell(new );
+        storage.tell(new StoreServers());
     }
 }
