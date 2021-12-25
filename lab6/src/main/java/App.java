@@ -31,7 +31,7 @@ public class App {
             System.exit(-1);
         }
 
-        List<CompletionStage<ServerBinding>>
+        List<CompletionStage<ServerBinding>> bindings 
 
     }
 }
