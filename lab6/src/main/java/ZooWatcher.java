@@ -19,10 +19,14 @@ public class ZooWatcher implements Watcher {
         sendServers();
     }
 
+    private static String getServerData(ZooKeeper zoo, String server) throws InterruptedException, KeeperException {
+        return new String(zoo.getData(String.format(Constants.SERVER_PATH_PATTERN, server), false, null));
+    }
+
     private void sendServers() throws InterruptedException, KeeperException {
         List<String> servers = new ArrayList<>();
         for (String server : zoo.getChildren(Constants.SERVERS_PATH, this)) {
-            servers.add(new String(zoo.getData(String.format(Constants.SERVER_PATH_PATTERN, server), false, null)));
+            servers.add(getServerData(zoo, server));
         }
         storage.tell(new StoreServers(servers), ActorRef.noSender());
     }

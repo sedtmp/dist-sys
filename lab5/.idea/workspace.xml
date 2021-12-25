@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5ab030f-6631-479c-9ce7-4de988e5692c" name="Changes" comment="" />
+    <list default="true" id="e5ab030f-6631-479c-9ce7-4de988e5692c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlowCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlowCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messages/StoreMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/StoreMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/ZooWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/src/main/java/ZooWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/java/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/src/main/java/constants/Constants.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

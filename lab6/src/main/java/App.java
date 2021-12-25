@@ -16,51 +16,55 @@ import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.CompletionStage;
 
 public class App {
-    public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
+    public static void print(String msg) {
+        System.out.println(Constants.GREEN + msg + Constants.RESET);
+    }
+
+    public static void main(String[] args) throws IOException {
         BasicConfigurator.configure();
+
+
+        
         ActorSystem actorSystem = ActorSystem.create("routes");
-        ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
+        ActorRef actoreStorage = actorSystem.actorOf(Props.create(StoreActor.class));
         final ActorMaterializer materializer = ActorMaterializer.create(actorSystem);
         final Http http = Http.get(actorSystem);
 
         ZooKeeper zoo = null;
         try {
-            zoo = new ZooKeeper("localhost:2181", Constants.ZOOKEEPER_TIMEOUT, null);
-            new ZooWatcher(zoo, storage);
+            zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX], Constants.ZOOKEEPER_TIMEOUT, null);
+            new ZooWatcher(zoo, actoreStorage);
         } catch (KeeperException | InterruptedException exception) {
             exception.printStackTrace();
             System.exit(-1);
         }
 
-        List<CompletionStage<ServerBinding>> bindings = new ArrayList<>();
+        CompletionStage<ServerBinding> binding = null;
         StringBuilder serversInfo = new StringBuilder("Servers online at\n");
-        for (int i = 1; i < args.length; i++) {
-            try {
-                Server server = new Server(http, storage, zoo, args[i]);
-                final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = server.createRoute().flow(
-                        actorSystem,
-                        materializer
-                );
-                bindings.add(http.bindAndHandle(
-                        routeFlow,
-                        ConnectHttp.toHost(Constants.HOST, Integer.parseInt(args[i])),
-                        materializer
-                ));
-                serversInfo.append("http://localhost:").append(args[i]).append("/\n");
-            } catch (InterruptedException | KeeperException exception) {
-                exception.printStackTrace();
-            }
+        try {
+            Server server = new Server(http, actoreStorage, zoo, args[Constants.PORT_INDEX]);
+            final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = server.createRoute().flow(
+                    actorSystem,
+                    materializer
+            );
+            binding = http.bindAndHandle(
+                    routeFlow,
+                    ConnectHttp.toHost(Constants.HOST, Integer.parseInt(args[Constants.PORT_INDEX])),
+                    materializer
+            );
+            serversInfo.append(Constants.createServerUrl(args[Constants.PORT_INDEX]));
+        } catch (InterruptedException | KeeperException exception) {
+            exception.printStackTrace();
         }
 
-        if (Constants.isZero(bindings.size())) {
-            System.out.println("ZERO SERVERS RUNNING");
+        if (binding == null) {
+            System.out.println(Constants.ERROR);
         }
-        System.out.println(serversInfo + "\nPress RETURN to stop...");
+        print(serversInfo + "\nPress RETURN to stop...");
+
         try {
             System.in.read();
         } catch (IOException exception) {
@@ -68,8 +72,6 @@ public class App {
             System.exit(-1);
         }
 
-        for (CompletionStage<ServerBinding> binding : bindings) {
-            binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> actorSystem.terminate());
-        }
+        binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> actorSystem.terminate());
     }
 }

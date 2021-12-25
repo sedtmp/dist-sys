@@ -10,7 +10,7 @@ public class StoreMessage {
     }
 
     public String getUrl() {
-        return this.url;
+        return url;
     }
 
     public Integer getTime() {
