@@ -9,7 +9,7 @@ import org.apache.zookeeper.ZooKeeper;
 
 public class App {
     public static void main(String[] args) {
-        if ()
+        if (args.length)
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
         ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
