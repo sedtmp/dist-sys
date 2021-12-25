@@ -43,7 +43,7 @@ public class Server implements Watcher {
             return completeWithFuture(Patterns
                     .ask(actorConfig, new GetServer(), Duration.ofMillis(5000))
                     .thenCompose(req -> {
-                        String singleRequestUrl
+                        String singleRequestUrl = 
                         return http.singleRequest(HttpRequest.create(String.format(
                                 "http://%s/?url=%s&count=%d",
                                 req,
