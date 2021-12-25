@@ -12,7 +12,7 @@ import org.apache.zookeeper.ZooKeeper;
 import java.io.IOException;
 
 public class App {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
         ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
@@ -23,8 +23,8 @@ public class App {
         try {
             zoo = new ZooKeeper(args[Constants.ZOOKEEPER_ADDRESS_INDEX], Constants.ZOOKEEPER_TIMEOUT, null);
             new ZooWatcher(zoo, storage);
-        } catch (KeeperException | InterruptedException) {
-
+        } catch (KeeperException | InterruptedException exception) {
+            
         }
 
     }
