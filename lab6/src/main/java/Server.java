@@ -12,6 +12,7 @@ public class Server implements Watcher {
     public Server(Http http, ActorRef actorConfig, ZooKeeper zoo, String port) {
         this.http = http;
         this.actorConfig = actorConfig;
+        this.zoo = zoo;
         
     }
 }
