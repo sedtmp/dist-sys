@@ -69,7 +69,7 @@ public class App {
         }
 
         for (CompletionStage<ServerBinding> binding : bindings) {
-            binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> )
+            binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> actorSystem.terminate());
         }
     }
 }
