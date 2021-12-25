@@ -1,5 +1,6 @@
 import akka.actor.ActorRef;
 import akka.http.javadsl.Http;
+import constants.Constants;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
@@ -13,6 +14,6 @@ public class Server implements Watcher {
         this.http = http;
         this.actorConfig = actorConfig;
         this.zoo = zoo;
-        
+        this.path = Constants.createPath(port);
     }
 }
