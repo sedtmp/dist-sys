@@ -16,7 +16,13 @@ public class ZooWatcher implements Watcher {
     public ZooWatcher(ZooKeeper zoo, ActorRef storage) throws InterruptedException, KeeperException {
         this.zoo = zoo;
         this.storage = storage;
-        sendServers();
+        try {
+            byte[] data = this.zoo.getData(PATH, true, null);
+            System.out.println("servers data=" + new String(data));
+            sendServers();
+        } catch (KeeperException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     private void sendServers() throws InterruptedException, KeeperException {
