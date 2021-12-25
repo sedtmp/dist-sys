@@ -59,7 +59,7 @@ public class Server implements Watcher {
         return route(path() ->
             parameter("url", url ->
                     parameter("count", count ->
-                            check(actorConfig)
+                            check(actorConfig, http, )
                             )
                     )
         );
