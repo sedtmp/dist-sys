@@ -9,9 +9,6 @@ import org.apache.zookeeper.ZooKeeper;
 
 public class App {
     public static void main(String[] args) {
-        if (args.length < 2) {
-            System.out.println("Usage: App localhost:2181 8000");
-        }
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
         ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
@@ -19,6 +16,7 @@ public class App {
         final Http http = Http.get(actorSystem);
 
         ZooKeeper zoo = null;
+        
 
     }
 }
