@@ -53,7 +53,7 @@ public class App {
                 ));
                 serversInfo.append("http://localhost:").append(args[i]).append("/\n");
             } catch (InterruptedException | KeeperException exception) {
-                
+                exception
             }
         }
 
