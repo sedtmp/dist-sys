@@ -15,6 +15,8 @@ public class ZooWatcher implements Watcher {
     public ZooWatcher(ZooKeeper zoo, ActorRef storage) {
         this.zoo = zoo;
         this.storage = storage;
+        
+        sendServers();
     }
 
     private void sendServers() throws InterruptedException, KeeperException {
@@ -25,5 +27,5 @@ public class ZooWatcher implements Watcher {
         storage.tell(new StoreServers(servers), ActorRef.noSender());
     }
 
-    
+
 }
