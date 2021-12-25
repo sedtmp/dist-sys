@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e46cb6-bcf7-45ed-926e-7e745b4aee4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/Constants.java" afterDir="false" />
-    </list>
+    <list default="true" id="06e46cb6-bcf7-45ed-926e-7e745b4aee4c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +45,7 @@
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="lab6" />
-      <option name="PROGRAM_PARAMETERS" value="localhost:2181 8000" />
+      <option name="PROGRAM_PARAMETERS" value="2181 8000" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
