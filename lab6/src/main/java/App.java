@@ -11,6 +11,7 @@ import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletionStage;
 
@@ -31,7 +32,7 @@ public class App {
             System.exit(-1);
         }
 
-        List<CompletionStage<ServerBinding>> bindings 
+        List<CompletionStage<ServerBinding>> bindings = new ArrayList<>()
 
     }
 }
