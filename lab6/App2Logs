@@ -1,0 +1,141 @@
+0 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.5.5-390fe37ea45dee01bf87dc1c042b5e3dcce88653, built on 05/03/2019 12:07 GMT
+0 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:host.name=PC
+0 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_261
+0 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+0 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:java.home=/home/smegdm/jdk1.8.0_261/jre
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=/home/smegdm/jdk1.8.0_261/jre/lib/charsets.jar:/home/smegdm/jdk1.8.0_261/jre/lib/deploy.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/cldrdata.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/dnsns.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/jaccess.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/jfxrt.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/localedata.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/nashorn.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/sunec.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/sunjce_provider.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/sunpkcs11.jar:/home/smegdm/jdk1.8.0_261/jre/lib/ext/zipfs.jar:/home/smegdm/jdk1.8.0_261/jre/lib/javaws.jar:/home/smegdm/jdk1.8.0_261/jre/lib/jce.jar:/home/smegdm/jdk1.8.0_261/jre/lib/jfr.jar:/home/smegdm/jdk1.8.0_261/jre/lib/jfxswt.jar:/home/smegdm/jdk1.8.0_261/jre/lib/jsse.jar:/home/smegdm/jdk1.8.0_261/jre/lib/management-agent.jar:/home/smegdm/jdk1.8.0_261/jre/lib/plugin.jar:/home/smegdm/jdk1.8.0_261/jre/lib/resources.jar:/home/smegdm/jdk1.8.0_261/jre/lib/rt.jar:/home/smegdm/dist-sys/lab6/target/classes:/home/smegdm/.m2/repository/com/typesafe/akka/akka-actor_2.12/2.5.26/akka-actor_2.12-2.5.26.jar:/home/smegdm/.m2/repository/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.jar:/home/smegdm/.m2/repository/com/typesafe/config/1.3.3/config-1.3.3.jar:/home/smegdm/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-slf4j_2.12/2.5.26/akka-slf4j_2.12-2.5.26.jar:/home/smegdm/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-stream_2.12/2.5.26/akka-stream_2.12-2.5.26.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-protobuf_2.12/2.5.26/akka-protobuf_2.12-2.5.26.jar:/home/smegdm/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/home/smegdm/.m2/repository/com/typesafe/ssl-config-core_2.12/0.3.8/ssl-config-core_2.12-0.3.8.jar:/home/smegdm/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-stream-testkit_2.12/2.5.26/akka-stream-testkit_2.12-2.5.26.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-testkit_2.12/2.5.26/akka-testkit_2.12-2.5.26.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-http-core_2.12/10.1.10/akka-http-core_2.12-10.1.10.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-parsing_2.12/10.1.10/akka-parsing_2.12-10.1.10.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-http_2.12/10.1.10/akka-http_2.12-10.1.10.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-http-testkit_2.12/10.1.10/akka-http-testkit_2.12-10.1.10.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-http-spray-json_2.12/10.1.10/akka-http-spray-json_2.12-10.1.10.jar:/home/smegdm/.m2/repository/io/spray/spray-json_2.12/1.3.5/spray-json_2.12-1.3.5.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-http-jackson_2.12/10.1.10/akka-http-jackson_2.12-10.1.10.jar:/home/smegdm/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.9.3/jackson-databind-2.9.9.3.jar:/home/smegdm/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/home/smegdm/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar:/home/smegdm/.m2/repository/com/typesafe/akka/akka-http-xml_2.12/10.1.10/akka-http-xml_2.12-10.1.10.jar:/home/smegdm/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar:/home/smegdm/.m2/repository/org/apache/zookeeper/zookeeper/3.5.5/zookeeper-3.5.5.jar:/home/smegdm/.m2/repository/org/apache/zookeeper/zookeeper-jute/3.5.5/zookeeper-jute-3.5.5.jar:/home/smegdm/.m2/repository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar:/home/smegdm/.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar:/home/smegdm/.m2/repository/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar:/home/smegdm/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/snap/intellij-idea-community/337/lib/idea_rt.jar
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=/tmp
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Linux
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:os.version=5.11.0-43-generic
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:user.name=smegdm
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:user.home=/home/smegdm
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=/home/smegdm/dist-sys/lab6
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:os.memory.free=103MB
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:os.memory.max=1748MB
+1 [main] INFO org.apache.zookeeper.ZooKeeper  - Client environment:os.memory.total=119MB
+2 [main] INFO org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=localhost:2181 sessionTimeout=2500 watcher=null
+6 [main] INFO org.apache.zookeeper.common.X509Util  - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+12 [main] INFO org.apache.zookeeper.ClientCnxnSocket  - jute.maxbuffer value is 4194304 Bytes
+18 [main] INFO org.apache.zookeeper.ClientCnxn  - zookeeper.request.timeout value is 0. feature enabled=
+24 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.SaslServerPrincipal  - Canonicalized address to localhost
+25 [main-SendThread(localhost:2181)] INFO org.apache.zookeeper.ClientCnxn  - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+30 [main-SendThread(localhost:2181)] INFO org.apache.zookeeper.ClientCnxn  - Socket connection established, initiating session, client: /127.0.0.1:55866, server: localhost/127.0.0.1:2181
+31 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Session establishment request sent on localhost/127.0.0.1:2181
+36 [main-SendThread(localhost:2181)] INFO org.apache.zookeeper.ClientCnxn  - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10001e98aa80008, negotiated timeout = 4000
+38 [main-EventThread] ERROR org.apache.zookeeper.ClientCnxn  - Error while calling watcher 
+java.lang.NullPointerException
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:535)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:510)
+40 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Reading reply sessionid:0x10001e98aa80008, packet:: clientPath:null serverPath:null finished:false header:: 1,8  replyHeader:: 1,93,0  request:: '/servers,T  response:: v{'localhost:8010} 
+45 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Reading reply sessionid:0x10001e98aa80008, packet:: clientPath:null serverPath:null finished:false header:: 2,4  replyHeader:: 2,93,0  request:: '/servers/localhost:8010,F  response:: #6c6f63616c686f73743a38303130,s{92,92,1640460201002,1640460201002,0,0,0,72059696603201543,14,0,92} 
+59 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got notification sessionid:0x10001e98aa80008
+60 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/servers for sessionid 0x10001e98aa80008
+62 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Reading reply sessionid:0x10001e98aa80008, packet:: clientPath:null serverPath:null finished:false header:: 3,1  replyHeader:: 3,94,0  request:: '/servers/localhost:8015,#6c6f63616c686f73743a38303135,v{s{31,s{'world,'anyone}}},1  response:: '/servers/localhost:8015 
+63 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Reading reply sessionid:0x10001e98aa80008, packet:: clientPath:null serverPath:null finished:false header:: 4,8  replyHeader:: 4,94,0  request:: '/servers,T  response:: v{'localhost:8015,'localhost:8010} 
+65 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Reading reply sessionid:0x10001e98aa80008, packet:: clientPath:null serverPath:null finished:false header:: 5,8  replyHeader:: 5,94,0  request:: '/servers,T  response:: v{'localhost:8015,'localhost:8010} 
+67 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Reading reply sessionid:0x10001e98aa80008, packet:: clientPath:null serverPath:null finished:false header:: 6,4  replyHeader:: 6,94,0  request:: '/servers/localhost:8015,F  response:: #6c6f63616c686f73743a38303135,s{94,94,1640460208556,1640460208556,0,0,0,72059696603201544,14,0,94} 
+69 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Reading reply sessionid:0x10001e98aa80008, packet:: clientPath:null serverPath:null finished:false header:: 7,4  replyHeader:: 7,94,0  request:: '/servers/localhost:8010,F  response:: #6c6f63616c686f73743a38303130,s{92,92,1640460201002,1640460201002,0,0,0,72059696603201543,14,0,92} 
+Servers online at
+http://localhost:8015/
+
+Press RETURN to stop...
+1405 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+2740 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+4074 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+5409 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+6744 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+8080 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+9415 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+10750 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+12085 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+13421 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+14756 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+16091 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+17424 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+18760 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+20095 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+21430 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+22765 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+24100 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+25435 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+26770 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+28105 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+29439 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+30775 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+32110 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+33444 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+34779 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+36114 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+37449 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+38784 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+40119 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+41455 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+42790 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+44126 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+45460 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+46796 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+48130 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+49465 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+50799 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+52134 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+53470 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+54804 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+56138 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+57471 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+58806 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+60139 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+61473 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+62807 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+64141 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+65475 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+66811 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+68146 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+69479 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+70815 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+72148 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+73483 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+Count = 20 on localhost:8015
+Count = 19 on localhost:8015
+Count = 18 on localhost:8015
+Count = 16 on localhost:8015
+Count = 15 on localhost:8015
+Count = 11 on localhost:8015
+Count = 7 on localhost:8015
+Count = 6 on localhost:8015
+74819 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+76154 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+77488 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+78824 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 2ms
+80158 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+81494 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+82828 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+84162 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+85496 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+86831 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+88166 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+89500 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+90834 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+92170 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+93504 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+[INFO] [12/25/2021 22:25:02.176] [routes-akka.actor.default-dispatcher-6] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+[INFO] [12/25/2021 22:25:02.442] [routes-akka.actor.default-dispatcher-14] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+[INFO] [12/25/2021 22:25:02.462] [routes-akka.actor.default-dispatcher-6] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+Count = 5 on localhost:8015
+[INFO] [12/25/2021 22:25:02.832] [routes-akka.actor.default-dispatcher-2] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+[INFO] [12/25/2021 22:25:02.851] [routes-akka.actor.default-dispatcher-2] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+[INFO] [12/25/2021 22:25:02.902] [routes-akka.actor.default-dispatcher-2] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+[INFO] [12/25/2021 22:25:02.952] [routes-akka.actor.default-dispatcher-4] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+[INFO] [12/25/2021 22:25:02.963] [routes-akka.actor.default-dispatcher-4] [akka.actor.ActorSystemImpl(routes)] Request timeout encountered for request [GET / Empty]
+Count = 0 on localhost:8015
+94839 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+96174 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+97510 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+98844 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+100178 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+101512 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 0ms
+102847 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+104183 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
+105516 [main-SendThread(localhost:2181)] DEBUG org.apache.zookeeper.ClientCnxn  - Got ping response for sessionid: 0x10001e98aa80008 after 1ms
