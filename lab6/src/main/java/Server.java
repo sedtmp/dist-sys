@@ -70,7 +70,7 @@ public class Server implements Watcher {
         try {
             zoo.getData(path, this, null);
         } catch (KeeperException | InterruptedException exception) {
-            
+            exception.printStackTrace();
         }
     }
 }
