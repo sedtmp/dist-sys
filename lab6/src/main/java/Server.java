@@ -14,8 +14,8 @@ public class Server implements Watcher {
         this.http = http;
         this.actorConfig = actorConfig;
         this.zoo = zoo;
-        this.path = Constants.createPath(port);
+        this.path = Constants.createServerPath(port);
     }
 
-    
+
 }
