@@ -31,7 +31,8 @@ public class ZooWatcher implements Watcher {
     @Override
     public void process(WatchedEvent event) {
         try {
-            zoo.getChildren(Constants.SERVERS_PATH)
+            zoo.getChildren(Constants.SERVERS_PATH, this);
+            
         }
     }
 }
