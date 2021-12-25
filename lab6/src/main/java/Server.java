@@ -56,7 +56,7 @@ public class Server implements Watcher {
     }
 
     public Route createRoute() {
-        return route(path(() ->
+        return route(path( ->
                 parameter("url", url ->
                         parameter("count", count ->
                                 check(actorConfig, http, new Request(url, count))
