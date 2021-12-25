@@ -4,6 +4,8 @@ public class Request {
 
     public Request(String url, String count) {
         this.url = url;
-        this.count = Integer.parseInt()
+        this.count = Integer.parseInt(count);
     }
+
+    
 }
