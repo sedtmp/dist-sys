@@ -37,7 +37,9 @@ public class Server implements Watcher {
                 parameter("url", (url) -> {
                     parameter("count", (count) -> {
                         if (Constants.isZeroCount(count)) {
-                            return completeWithFuture(http.singleRequest(HttpRequest.create()))
+                            return completeWithFuture(http.singleRequest(HttpRequest.create(url)));
+                        } else {
+                            
                         }
                     })
                 })
