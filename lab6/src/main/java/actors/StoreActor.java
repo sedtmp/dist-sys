@@ -20,7 +20,7 @@ public class StoreActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(StoreServers.class, msg -> this.servers = msg.getServers())
+                .match(StoreServers.class, msg -> servers = msg.getServers())
                 .match(GetServer.class, msg -> getSender().tell(this.getRandomServer(), ActorRef.noSender()))
                 .build();
     }
