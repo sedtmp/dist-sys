@@ -16,6 +16,6 @@ public class Request {
     }
 
     public void decrementCount() {
-        
+        count--;
     }
 }
