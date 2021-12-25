@@ -2,6 +2,7 @@ import actors.StoreActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.stream.ActorMaterializer;
 import org.apache.log4j.BasicConfigurator;
 
 public class App {
@@ -9,6 +10,6 @@ public class App {
         BasicConfigurator.configure();
         ActorSystem actorSystem = ActorSystem.create("routes");
         ActorRef storage = actorSystem.actorOf(Props.create(StoreActor.class));
-        final 
+        final ActorMaterializer
     }
 }
