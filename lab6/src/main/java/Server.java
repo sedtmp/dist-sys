@@ -4,6 +4,7 @@ import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.server.Route;
 import akka.pattern.Patterns;
 import constants.Constants;
+import messages.GetServer;
 import org.apache.zookeeper.*;
 
 import static akka.http.javadsl.server.Directives.*;
@@ -41,7 +42,7 @@ public class Server implements Watcher {
                             return completeWithFuture(http.singleRequest(HttpRequest.create(url)));
                         } else {
                             return completeWithFuture(Patterns
-                                    .ask(actorConfig, new)
+                                    .ask(actorConfig, new GetServer())
                             );
                         }
                     })
