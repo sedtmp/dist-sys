@@ -30,7 +30,7 @@ public class App {
             System.exit(-1);
         }
 
-        List<CompletionStage>
+        List<CompletionStage<Server>>
 
     }
 }
