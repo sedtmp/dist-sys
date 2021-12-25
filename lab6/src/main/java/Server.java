@@ -43,7 +43,9 @@ public class Server implements Watcher {
             return completeWithFuture(Patterns
                     .ask(actorConfig, new GetServer(), Duration.ofMillis(5000))
                     .thenCompose(req -> {
-                        
+                        http.singleRequest(HttpRequest.create(String.format(
+                                
+                        )));
                     })
             );
         }
