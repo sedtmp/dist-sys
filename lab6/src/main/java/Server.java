@@ -4,6 +4,8 @@ import akka.http.javadsl.server.Route;
 import constants.Constants;
 import org.apache.zookeeper.*;
 
+import static akka.http.javadsl.server.Directives.*;
+
 public class Server implements Watcher {
     private final Http http;
     private final ActorRef actorConfig;
@@ -29,6 +31,6 @@ public class Server implements Watcher {
     }
 
     public Route createRoute() {
-        return 
+        return route()
     }
 }
