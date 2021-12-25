@@ -52,7 +52,7 @@ public class App {
                         materializer
                 ));
                 serversInfo.append("http://localhost:").append(args[i]).append("/\n");
-            } catch (InterruptedException)
+            } catch (InterruptedException | KeeperException)
         }
 
     }
