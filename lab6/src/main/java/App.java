@@ -65,6 +65,7 @@ public class App {
             System.in.read();
         } catch (IOException exception) {
             exception.printStackTrace();
+            System.exit(-1);
         }
     }
 }
