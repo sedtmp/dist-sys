@@ -6,7 +6,7 @@ public class Constants {
     public static final String HOST = "localhost";
     public static final String EMPTY_STRING = "";
     public static final int ZOOKEEPER_ADDRESS_INDEX = 0;
-    public static final 
+    public static final int ZOOKEEPER_TIMEOUT = 
 
     public static String createServerPath(String port) {
         return String.format("%s:%s", HOST, port);
