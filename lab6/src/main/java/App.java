@@ -69,7 +69,7 @@ public class App {
         }
 
         for (CompletionStage<ServerBinding> binding : bindings) {
-            binding.thenCompose(ServerBinding::unbind).
+            binding.thenCompose(ServerBinding::unbind).thenAccept()
         }
     }
 }
