@@ -32,7 +32,11 @@ public class Server implements Watcher {
 
     public Route createRoute() {
         return route(path(Constants.EMPTY_STRING, () -> {
-            route(get(() -> parameter("url", (url) -> )))
+            route(get(() -> {
+                parameter("url", (url) -> {
+                    
+                })
+            }))
         }))
     }
 }
