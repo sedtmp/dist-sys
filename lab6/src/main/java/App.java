@@ -3,6 +3,7 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.Http;
+import akka.http.javadsl.ServerBinding;
 import akka.stream.ActorMaterializer;
 import constants.Constants;
 import org.apache.log4j.BasicConfigurator;
@@ -30,7 +31,7 @@ public class App {
             System.exit(-1);
         }
 
-        List<CompletionStage<Server>>
+        List<CompletionStage<ServerBinding>>
 
     }
 }
