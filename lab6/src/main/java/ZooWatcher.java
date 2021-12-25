@@ -17,7 +17,7 @@ public class ZooWatcher implements Watcher {
         this.zoo = zoo;
         this.storage = storage;
         try {
-            byte[] data = this.zoo.getData(PATH, true, null);
+            byte[] data = this.zoo.getData(Constants.SERVERS_PATH, true, null);
             System.out.println("servers data=" + new String(data));
             sendServers();
         } catch (KeeperException | InterruptedException e) {
